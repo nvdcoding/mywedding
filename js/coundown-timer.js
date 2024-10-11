@@ -71,3 +71,32 @@
 		
 	}
 }) (jQuery);
+var targetDate = new Date("Nov 11, 2024 00:00:00").getTime();
+
+        // Hàm update thời gian đếm ngược
+        function updateCountdown() {
+            var now = new Date().getTime();
+            var remainingTime = targetDate - now;
+
+            // Tính toán số ngày, giờ, phút, và giây còn lại
+            var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+            // Hiển thị kết quả xuống dòng
+            document.getElementById("countdown").innerHTML = 
+            days + "<span class='day'>days</span> <br>" + 
+            hours + " hours<br>" + 
+            minutes + " minutes<br>" + 
+            seconds + " seconds<br>";
+
+            // Nếu hết thời gian, hiển thị thông báo kết thúc
+            if (remainingTime < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "Countdown Finished!";
+            }
+        }
+
+        // Cập nhật đếm ngược mỗi giây
+        var countdownInterval = setInterval(updateCountdown, 1000);

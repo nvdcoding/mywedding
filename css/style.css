@@ -658,6 +658,18 @@ li {
   text-align: center;
   background-color: #fff;
 }
+/* opening_statement */
+.opening_statement .opening_statement_thumb{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.opening_statement .opening_statement_thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
 .wd_center_words {
   float: left;
   width: 100%;
@@ -890,6 +902,13 @@ li {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
+}
+.wd_event_infobox img{
+  width:230px;
+}
+.wd_event_infobox .map{
+  width: 25px;
+  margin-bottom: 3px;
 }
 .wd_event_infobox h2 {
   float: left;
@@ -2270,13 +2289,13 @@ li {
 }
 
 .wd_guest_infobox {
-  /*backdrop-filter: grayscale(0.5) opacity(0.8);*/
-  /*background-color: rgba(255, 255, 255, 0.4);*/
+  backdrop-filter: grayscale(0.5) opacity(0.8);
+  background-color: rgba(255, 255, 255, 0.4);
 
-  /*-webkit-backdrop-filter: blur(5px);*/
+  -webkit-backdrop-filter: blur(5px);
 
-  /*backdrop-filter: blur(5px);*/
-  opacity: 0;
+  backdrop-filter: blur(5px);
+  opacity: 1;
 }
 .margin-top {
   margin-top: 100px;
@@ -2394,10 +2413,23 @@ li {
   margin: 0 auto;
 }
 #love_story .load_more img{
-  margin: auto;
+  margin: 0 48.4%;
 }
 .section_title_wrap{
   text-align: center;
+}
+.theme-btn{
+  border: 1px solid #636363;
+  background: #636363;
+  width: 189px;
+  height: 42px;
+  border-radius: 6px;
+  color: var(--color-white-solid, #FFFFFF);
+  padding: 5px;
+}
+.theme-btn:hover{
+  background: #505050;
+  color: var(--color-white-solid, #FFFFFF);
 }
 /*--------------------------------------------------------------
 #0.6	invitation-section 
@@ -2577,4 +2609,43 @@ li {
     font-size: 12px;
     font-size: 0.8rem;
   }
+}
+/* modal */
+/* Ẩn modal khi chưa được mở */
+.modal {
+  display: none; /* Ẩn đi */
+  position: fixed; /* Cố định modal */
+  z-index: 1; /* Đảm bảo modal luôn ở trên */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Scroll nếu nội dung quá dài */
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+}
+
+/* Nội dung của modal */
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* Canh giữa theo chiều dọc và ngang */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Kích thước của modal */
+  max-width: 500px; /* Đảm bảo modal không quá lớn */
+  border-radius: 10px; /* Bo góc */
+}
+
+/* Nút đóng modal (dấu X) */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

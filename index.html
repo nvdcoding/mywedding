@@ -31,6 +31,7 @@
             <!-- favicon links -->
             <link rel="shortcut icon" type="image/ico"
                href="images/header/favicon.ico" />
+               <link rel="stylesheet" href="css/flipdown.css" />
          </head>
          <body>
             <!-- preloader Start -->
@@ -95,8 +96,8 @@
                               <h3>Văn Duy &amp; Mai Lam</h3>
                               <br>Hôm nay sum họp trúc mai<br />
                               Tình chung một khắc, nghĩa dài trăm năm.</p>
-                              <a href="#wishes" class="theme-btn">Ngày gặp gỡ</a>
-                              <a href="#wishes" class="theme-btn">Mừng cưới</a>
+                              <a href="#love_story" class="theme-btn">Ngày gặp gỡ</a>
+                              <a id="btn_happy_wedding" class="theme-btn">Mừng cưới</a>
                               <a href="#wishes" class="theme-btn">Xem bản đồ</a>
                            </div>
                         </div>
@@ -170,14 +171,34 @@
                                  </table>
                               </div>
                            </div>
-                           <div class="count-down-clock">
-                              <div id="countdown"></div>
-                           </div>
+                           <div id="flipdown" class="flipdown"></div>
+
                         </div>
                      </div>
                   </div>
                </div>
             </section>
+            <div section-scroll='8' class="wd_scroll_wrap margin-top">
+               <div class="container">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <div class="wd_timer_wrapper opening_statement">
+                        <div class="wd_center_words ">
+                           <h4>Lời ngỏ</h4>
+                        </div>
+                        <div class="content">
+                           <p>
+                              Hy vọng anh chị em bạn bè có thể góp chút thời gian đến tham dự lễ thành hôn của hai vợ chồng chúng mình!
+                              Và đặc biệt cảm ơn những anh chị em bạn bè đã đã có mặt để chúc mừng hạnh phúc của hai vợ chồng!
+                              Một lần nữa thay mặt hai bên gia đình chúng mình xin chân thành cảm ơn!
+                           </p>
+                           <div class="opening_statement_thumb">
+                              <img src="images/content/bride.jpg"
+                              alt="anh cuoi"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
             <div section-scroll='3' class="wd_scroll_wrap">
                <div class="wd_event_wrapper wd_toppadder90 wd_bottompadder50">
                   <div class="container">
@@ -194,36 +215,36 @@
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                            <div class="wd_event_infobox">
                               <h2>Nhà Trai</h2>
-                              <h1>4:00 pm</h1>
-                              <span>Lập Thạch, Vĩnh Phúc</span>
-                              <p> Thôn Đông Định, Xã Thái Hoà</p>
+                              <h1>15:00 pm</h1>
+                              <span>Ân Thi, Hưng Yên</span>
+                              <p> Thôn Sa Lung, Xã Phù Ủng</p>
                               <div class="clearfix"></div>
                               <a
-                                 href="https://maps.app.goo.gl/857HVoNhdvUsbMWb6"
+                                 href="https://maps.app.goo.gl/D87rWLEoXuFS5PGi6"
                                  target="_blank"><img
                                  src="images/content/map.png" alt="Map"
-                                 class="img-responsive"></a>
+                                 class="img-responsive map">Xem đường đi</a>
                            </div>
                         </div>
                         <div
                            class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-0">
                            <div class="wd_event_infobox">
                               <h2>Nhà Gái</h2>
-                              <h1>9:00 am</h1>
-                              <span>An Lão, Hải Phòng</span>
-                              <p>Thôn Lang Thượng, Xã Mỹ Đức</p>
+                              <h1>13:00 pm</h1>
+                              <span>Yên Phong, Bắc Ninh</span>
+                              <p>Thôn Đông Tảo, Xã Thụy Hòa</p>
                               <div class="clearfix"></div>
                               <a
-                                 href="https://maps.app.goo.gl/Pta7R6rEpjewCPwB9"
+                                 href="https://maps.app.goo.gl/htWofowEufwbwtfb9"
                                  target="_blank"><img
                                  src="images/content/map.png" alt="Map"
-                                 class="img-responsive"></a>
+                                 class="img-responsive map">Xem đường đi</a>
                            </div>
                         </div>
                         <div
                            class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-pull-4 col-md-pull-4 col-sm-pull-0">
                            <div class="wd_event_infobox">
-                              <img src="images/content/event_img.gif"
+                              <img src="images/content/tochuc.png"
                                  alt="Event Image">
                               <div
                                  class="wd_btn wd_single_index_menu_wedding">
@@ -342,15 +363,10 @@
                <div class="container">
                   <div class="section_title_wrap">
                      <h1 class="section_title">
-                        <span>Chuyện chúng mình</span>
+                        <span>Hành trình mình bên nhau</span>
                      </h1>
-                     <p class="section-text">Lorem Ipsum is
-                        simply dummy text of the printing
-                        and
-                        typesetting industry. Lorem Ipsum
-                        has been the <br> industry's
-                        standard dummy
-                        text ever since the 1500s
+                     <p class="section-text">Tình yêu không chỉ là một danh từ - nó là một động từ  <br> nó còn hơn cả
+                        một cảm giác - đó là sự quan tâm, chia sẻ, giúp đỡ, hy sinh.
                      </p>
                   </div>
                   <!-- /.section_title_wrap -->
@@ -361,25 +377,16 @@
                               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details wow slideInRight">
                               <div
                                  class="details_content">
-                                 <h2>The First Day we
-                                    Met
+                                 <h2>Chương 1: Gặp gỡ
                                  </h2>
-                                 <p>Contrary to popular
-                                    belief, Lorem Ipsum
-                                    is not simply random
-                                    text. It has roots
-                                    in a piece of
-                                    classical Latin
-                                    literature from
-                                    45 BC, making it
-                                    over 2000 years
-                                    old.
+                                 <p>'Em có tin vào tình yêu sét đánh không? -Không, trời đánh thì em tin'
+                                    Ngày ấy vu vơ đăng stories trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen. Mà nào hay biết, 7 năm sau người ấy lại là chồng mình.
                                  </p>
                               </div>
                            </div>
                            <div
                               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInLeft">
-                              27 jan, 2015
+                              28/10/2018
                            </div>
                         </li>
                         <li class="clearfix">
@@ -391,23 +398,43 @@
                               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details wow slideInLeft">
                               <div
                                  class="details_content">
-                                 <h2>The First Day we
-                                    Met
+                                 <h2>Chương II: Tỏ tình
                                  </h2>
-                                 <p>There are many
-                                    variations of
-                                    passages of Lorem
-                                    Ipsum available,
-                                    but the majority
-                                    have
+                                 <p>
+                                    Hông biết viến gì vào đâyyy
                                  </p>
-                                 <p>suffered alteration
-                                    in some form, by
-                                    injected humour, or
-                                    randomised words
-                                    which don't look
-                                    even slightly
-                                    believable.
+                                 
+                              </div>
+                           </div>
+                        </li>
+                        <li class="clearfix">
+                           <div
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details  wow slideInRight">
+                              <div
+                                 class="details_content">
+                                 <h2>Chương III: Phát triển
+                                 </h2>
+                                 <p>Bên nhau cùng nhau trải qua những năm tháng gắn với mái trường KMA. Yêu nhau, vun vén hạnh phúc và cùng học, cùng chơi với VS Code, cùng nỗ lực vượt qua những khó khăn trong cuộc sống. Chúng mình từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng mình tiếp tục cùng nhau sang trang mới. 
+                                 </p>
+                              </div>
+                           </div>
+                           <div
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInLeft">
+                              hiện tại
+                           </div>
+                        </li>
+                        <li class="clearfix">
+                           <div
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInRight">
+                  Hôm nay
+                           </div>
+                           <div
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details wow slideInLeft">
+                              <div
+                                 class="details_content">
+                                 <h2>Chương IV: Ngày đặc biệt
+                                 </h2>
+                                 <p>
                                  </p>
                               </div>
                            </div>
@@ -417,49 +444,30 @@
                               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details  wow slideInRight">
                               <div
                                  class="details_content">
-                                 <h2>The First Day we
-                                    Met
+                                 <h2>Chương V: Một nhà
                                  </h2>
-                                 <p>Contrary to popular
-                                    belief, Lorem Ipsum
-                                    is not simply random
-                                    text. It has roots
-                                    in a piece of
-                                    classical Latin
-                                    literature from
-                                    45 BC, making it
-                                    over 2000 years
-                                    old.
+                                 <p>Chúng mình có thêm một gia đình để yêu thương. 
                                  </p>
                               </div>
                            </div>
                            <div
                               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInLeft">
-                              27 jan, 2015
+                              hiện tại
                            </div>
                         </li>
                         <li class="clearfix">
                            <div
                               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInRight">
-                              27 jan, 2015
+                  Hôm nay
                            </div>
                            <div
                               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details wow slideInLeft">
                               <div
                                  class="details_content">
-                                 <h2>The First Day we
-                                    Met
+                                 <h2>Chương cuối: Tương lai
                                  </h2>
-                                 <p>Contrary to popular
-                                    belief, Lorem Ipsum
-                                    is not simply random
-                                    text. It has roots
-                                    in a piece of
-                                    classical Latin
-                                    literature from
-                                    45 BC, making it
-                                    over 2000 years
-                                    old.
+                                 <p>
+                                    Mãi mãi như ngày đầu nhóoo
                                  </p>
                               </div>
                            </div>
@@ -733,7 +741,6 @@
                   </div>
                </div>
             </div>
-            <!-- Gallery Wrapper End -->
             <div section-scroll='8' class="wd_scroll_wrap margin-top">
                <div class="container">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -838,6 +845,15 @@
                   </div>
                </div>
             </div>
+            <div id="myModal" class="modal">
+
+               <!-- Nội dung của modal -->
+               <div class="modal-content">
+                   <span class="close">&times;</span>
+                   <h2>Đây là nội dung của Modal</h2>
+                   <p>Bạn có thể thêm bất kỳ nội dung nào ở đây.</p>
+               </div>
+           </div>
             <!-- Footer Wrapper End -->
             <!--main js file start-->
             <script type="text/javascript" src="js/jquery.js"></script>
@@ -845,6 +861,8 @@
             <script type="text/javascript" src="js/owl.carousel.js"></script>
             <script type="text/javascript" src="js/modernizr.js"></script>
             <script type="text/javascript" src="js/smoothscroll.js"></script>
+<script src="js/flipdown.js"></script>
+
             <script type="text/javascript"
                src="js/jquery.magnific-popup.js"></script>
             <script type="text/javascript" src="js/wow.js"></script>
@@ -876,6 +894,10 @@
                    });
                    wow.init();
                });
+               
+               var flipdown = new FlipDown(Math.floor(new Date('2024-11-11T00:00:00').getTime() / 1000)               );
+               flipdown.start();
+              
             </script>
             <!--main js file end-->
          </body>

@@ -1,34 +1,4 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
 
-Project:	Wedding
-Version:	1.0.0
-Author:
-Website:
-Purchase:
--------------------------------------------------------------------
-[Table of contents]
-
-1. Body
-2. Custom css / a
-3. Preloader/ #preloader
-4. Header Css Start / .wd_slider_wrapper
-5. Button Css Start / .wd_btn
-6. Heading Css Start / .wd_heading
-7. About Wrapper css Start / .wd_about_wrapper
-8. Story css Start / .wd_story_wrapper
-9. Event css Start / .wd_event_wrapper
-10. Guest css Start / .wd_guest_wrapper
-11. Testimomnial css Start / .wd_testimonial_wrapper
-12. Family css Start / .wd_family_wrapper
-13. Gallery css Start / .wd_gallery_wrapper
-14. Blog css Start / .wd_blog_wrapper
-15. Contact css Start / .wd_contact_wrapper
-16. Footer css Start / .wd_footer_wrapper
-17. Responsive css Start / .wd_logo
-*/
-
-/*--------- Body Strat -------*/
 body,
 html {
   font-family: "Lora", serif;
@@ -37,7 +7,6 @@ html {
   color: #797979;
   overflow-x: hidden;
 }
-/*---------- Custom Css Start -------*/
 a {
   color: #797979;
   text-decoration: none;
@@ -66,6 +35,10 @@ h6,
   font-weight: 400;
   color: #222222;
 }
+p{
+  padding: 0;
+  margin: 0;
+}
 input,
 select,
 button {
@@ -88,6 +61,16 @@ ul,
 ol,
 li {
   list-style: none;
+}
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  width: 100%;
+  margin: auto;
+}
+.container::before,
+.container::after{
+  content: none;
 }
 .wd_toppadder10 {
   padding-top: 10px;
@@ -338,7 +321,6 @@ li {
 .wd_logo {
   float: left;
   width: 100%;
-  padding-top: 49px;
 }
 .wd_logo img {
   display: inline-block;
@@ -349,6 +331,8 @@ li {
   background-color: #fff;
   z-index: 1;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .wd_mainmenu_wrapper {
   float: left;
@@ -371,7 +355,7 @@ li {
 }
 .wd_main_menu ul li a {
   float: left;
-  padding: 70px 16px;
+  padding: 20px 16px;
   margin: 0px;
   color: #111111;
   font-size: 18px;
@@ -392,9 +376,6 @@ li {
 }
 .menu_fixed .wd_main_menu ul li a {
   padding: 30px 16px;
-}
-.menu_fixed .wd_logo {
-  padding-top: 10px;
 }
 .wd_menu_btn {
   display: none;
@@ -962,17 +943,6 @@ li {
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
-}
-.wd_overlay {
-  /*content: "";*/
-  /*position: absolute;*/
-  /*background-image: url(../images/content/dot_bg.png);*/
-  /*background-color: rgba(0, 0, 0, 0.8);*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*bottom: 0;*/
-  /*right: 0;*/
-  /*z-index: 0;*/
 }
 .wd_guest_wrapper .wd_heading h1 {
   color: #ffffff;
@@ -1910,9 +1880,7 @@ li {
 /*-- Responsive css Start --*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .wd_logo {
-    padding-top: 39px;
-  }
+  
   .wd_main_menu ul li a {
     padding: 50px 8px;
   }
@@ -1921,9 +1889,6 @@ li {
   }
   .wd_header_wrapper .wd_btn {
     padding-left: 30px;
-  }
-  .menu_fixed .wd_logo {
-    padding-top: 24px;
   }
   .wd_guest_infobox {
     padding: 30px 0px 30px 0px;

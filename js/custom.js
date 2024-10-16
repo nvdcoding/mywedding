@@ -356,28 +356,8 @@
     });
   });
 })();
-// mừng cưới
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("openModalBtn");
-var span = document.getElementsByClassName("close")[0];
-function handleClick() {
-  if (window.innerWidth <= 768) {
-      scrollToBottom();
-  } else {
-      showPopup();
-  }
-}
-function scrollToBottom() {
-  window.scrollTo({
-      top: document.body.scrollHeight, 
-      behavior: 'smooth'
-  });
-}
 
-function showPopup() {
-  modal.style.display = "block";
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
 }
-span.onclick = function() {
-  modal.style.display = "none";
-}
-document.getElementById("btn_happy_wedding").addEventListener("click", handleClick);

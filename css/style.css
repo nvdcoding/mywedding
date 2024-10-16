@@ -167,6 +167,7 @@ li {
 .wd_slider_wrapper {
   float: left;
   width: 100%;
+  height: 800px;
   background: url(../images/header/slider.jpg);
   position: relative;
   background-attachment: fixed;
@@ -225,6 +226,13 @@ li {
   width: 40%;
   padding: 0 0px 200px 100px;
   text-align: center;
+}
+.invitation-box-info{
+  position: absolute;
+  top: 55px;
+  right: 60px;
+  width: 105px;
+  z-index: 1;
 }
 .wd_slider_textinfo img {
   display: inline-block;
@@ -488,157 +496,7 @@ li {
 .wd_heading img {
   display: inline-block;
 }
-/*-- About Wrapper css Start --*/
-.wd_about_wrapper {
-  float: left;
-  width: 100%;
-  background-image: url(../images/content/about_bg.jpg);
-  background-size: cover;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-}
-.wd_about_infobox {
-  float: none;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.wd_about_infobox_img {
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 0;
-}
-.wd_about_infobox_img span {
-  position: absolute;
-  z-index: -1;
-  top: -16px;
-  -webkit-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-.wd_about_infobox_img span img {
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-}
-.wd_about_infobox_img img {
-  display: inline-block;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-}
-.wd_about_infobox h2 {
-  float: left;
-  width: 100%;
-  font-size: 30px;
-  text-transform: capitalize;
-  color: #f07677;
-}
-.wd_about_infobox p {
-  float: left;
-  width: 100%;
-  text-transform: capitalize;
-}
-.wd_about_infobox ul {
-  float: left;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-.wd_about_infobox ul li {
-  list-style: none;
-  display: inline-block;
-  width: auto;
-  margin: 5px;
-}
-.wd_about_infobox ul li a {
-  float: left;
-  width: 45px;
-  height: 45px;
-  line-height: 43px;
-  text-align: center;
-  color: #000000;
-  border: 1px solid #e4e4e4;
-  background-color: #ffffff;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.wd_about_infobox ul li a:hover {
-  background-color: #f07677;
-  color: #ffffff;
-  border: 1px solid #f07677;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.wd_about_infobox h1 {
-  float: left;
-  width: 100%;
-  font-size: 60px;
-  margin: 0px;
-  position: relative;
-}
-.wd_about_infobox h1:after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  right: 0px;
-  width: 100%;
-  border-bottom: 1px solid #f07677;
-}
-.wd_about_infobox h1 {
-  display: inline-block;
-  width: auto;
-  float: none;
-}
-.wd_about_infobox_date {
-  float: left;
-  width: 100%;
-  padding: 45px 60px;
-}
-.wd_about_infobox_date p {
-  float: left;
-  width: 100%;
-  font-style: italic;
-  padding: 0px 30px;
-}
-.wd_about_infobox_date h2 {
-  float: left;
-  width: 100%;
-  font-size: 40px;
-  color: #222222;
-  text-transform: uppercase;
-  font-family: "Lora", serif;
-  margin-top: 0px;
-}
-.wd_about_infobox_date h3 {
-  float: left;
-  width: 100%;
-  font-size: 30px;
-  color: #f07677;
-  text-transform: uppercase;
-  font-family: "Lora", serif;
-  margin-top: 10px;
-}
-.wd_timer_wrapper {
-  float: left;
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-}
+
 /* opening_statement */
 .opening_statement .opening_statement_thumb{
   width: 100%;
@@ -937,6 +795,7 @@ li {
 .wd_guest_wrapper {
   float: left;
   width: 100%;
+  height: 500px;
   background-image: url(../images/content/guest_bg.jpg);
   background-size: cover;
   background-position: center;
@@ -946,36 +805,6 @@ li {
 }
 .wd_guest_wrapper .wd_heading h1 {
   color: #ffffff;
-}
-.wd_guest_infobox {
-  float: left;
-  width: 100%;
-  padding: 60px 0px 30px 30px;
-}
-.wd_guest_infobox h2 {
-  float: left;
-  width: 100%;
-  color: #ffffff;
-  margin: 0px 0px 30px 0px;
-}
-.wd_guest_infobox h2 span {
-  color: #f07677;
-}
-.wd_guest_infobox h4 {
-  float: left;
-  width: 100%;
-  color: #ffffff;
-  font-family: "Lora", serif;
-  margin: 0px 0px 15px 0px;
-}
-.wd_guest_infobox p {
-  float: left;
-  width: 100%;
-  color: #ffffff;
-  margin-bottom: 50px;
-}
-.wd_guest_infobox {
-  content: "";
 }
 .wd_guest_formbox {
   float: right;
@@ -2263,7 +2092,7 @@ li {
   opacity: 1;
 }
 .margin-top {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 /*-- Responsive css End --*/
 
@@ -2473,9 +2302,15 @@ li {
   top: 50px;
   border: 5px solid rgb(129 103 103 / 40%);
 }
-
+.invitation-name{
+  width: 90%;
+}
 .invitation-section .invitation-box .inner {
   position: relative;
+}
+.invitation-section .invitation-box.left .inner{
+  top: 75px;
+  
 }
 .invitation-section .invitation-box .left-vec {
   background: url("../images/invitation-left-img.png") center center/cover no-repeat local;
@@ -2613,4 +2448,20 @@ li {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.bii-player .playerIcon {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #df4758;
+  padding-top: 7px;
+  padding-left: 9px;
+  position: absolute;
+  z-index: 2;
 }

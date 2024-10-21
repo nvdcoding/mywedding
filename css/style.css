@@ -1,7 +1,7 @@
 
 body,
 html {
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
   font-size: 16px;
   line-height: 23px;
   color: #797979;
@@ -251,7 +251,7 @@ li {
   font-size: 30px;
   color: #f07677;
   text-transform: capitalize;
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
   margin: 35px 0px 0px 0px;
 }
 .wd_slider_textinfo h1 {
@@ -260,7 +260,7 @@ li {
   font-size: 40px;
   color: #111111;
   text-transform: uppercase;
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
   margin: 10px 0px 10px 0px;
 }
 .wow {
@@ -483,7 +483,7 @@ li {
   width: 100%;
   margin: 10px 0px;
   font-size: 40px;
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
 }
 .wd_heading h4 {
   float: left;
@@ -491,7 +491,7 @@ li {
   margin: 0px;
   font-size: 18px;
   color: #f07677;
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
 }
 .wd_heading img {
   display: inline-block;
@@ -532,7 +532,7 @@ li {
   width: auto;
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
   padding: 0px 15px;
   background-color: #ffffff;
 }
@@ -548,7 +548,7 @@ li {
 #clockdiv > div {
   display: inline-block;
   margin: 30px 50px;
-  font-family: "Great Vibes", cursive;
+  font-family: "Mali", cursive;
 }
 #clockdiv div > span {
   float: left;
@@ -560,7 +560,7 @@ li {
   padding-top: 20px;
   font-size: 18px;
   color: #222222;
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
   font-style: italic;
   color: #797979;
 }
@@ -824,6 +824,7 @@ li {
   float: left;
   width: 100%;
   color: #f07677;
+  font-family: "Mali", serif;
   font-size: 30px;
   margin: 15px 0px 45px 0px;
 }
@@ -910,7 +911,7 @@ li {
   width: 100%;
   font-size: 18px;
   color: #ffffff;
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
   margin: 0px;
 }
 .wd_testimonial_slider .owl-theme .owl-nav.disabled + .owl-dots {
@@ -1039,7 +1040,7 @@ li {
   float: left;
   width: 100%;
   margin: 0px;
-  font-family: "Great Vibes", cursive;
+  font-family: "Mali", cursive;
   font-size: 24px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1667,8 +1668,8 @@ li {
   width: 100%;
   background-color: #0c0c0c;
   position: relative;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .wd_footer_section {
   float: left;
@@ -1679,10 +1680,31 @@ li {
   width: auto;
   height: 93px;
 }
+.wd_footer_section .wd_footer_section_thanks{
+  font-size: 41.6px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0.04px;
+  text-align: left;
+  color: #474747;
+
+}
+.wd_footer_section .wd_footer_section_name{
+  font-size: 20.6px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0.04px;
+  text-align: left;
+  color: #474747;
+
+}
+.wd_footer_section .wd_footer_section_copyright{
+  text-align: right;
+  line-height: 65px;
+
+}
 .wd_footer_section p {
-  float: right;
-  width: auto;
-  padding-top: 20px;
+  padding-top: 8px;
   margin: 0px;
   color: #cccccc;
 }
@@ -1818,18 +1840,7 @@ li {
   .wd_footer_infobox p {
     padding: 0px 0px;
   }
-  .wd_footer_section {
-    text-align: center;
-  }
-  .wd_footer_section img {
-    float: none;
-    display: inline-block;
-    margin-top: 25px;
-  }
-  .wd_footer_section p {
-    width: 100%;
-    padding-top: 30px;
-  }
+  
   .wd_gallery_slide {
     margin-bottom: 16px;
   }
@@ -1839,10 +1850,7 @@ li {
   .ast_glr_overlay p {
     font-size: 18px;
   }
-  .wd_footer_bottom_wrapper {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+  
   .wd_about_infobox_img{
     height: 200px;
     width: 200px;
@@ -2079,7 +2087,7 @@ li {
 }
 
 .content h3 {
-  font-family: "Lora", serif;
+  font-family: "Mali", serif;
 }
 
 .wd_guest_infobox {
@@ -2278,6 +2286,7 @@ li {
 .invitation-section .calendar-box .mini_calendar .calendar-month {
     text-align: center;
     margin-bottom: 5px;
+    font-family: "Mali", cursive;
     font-weight: 600;
     color: #203447;
     text-transform: uppercase;
@@ -2337,7 +2346,7 @@ li {
 
 
 .invitation-section .invitation-box h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Mali", cursive;
   font-size: 50px;
   font-size: 3.33333rem;
   margin: 0 0 0.6em;

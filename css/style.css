@@ -266,66 +266,6 @@ li {
 .wow {
   visibility: hidden;
 }
-#snow {
-  display: none;
-  background: none;
-  background-image: url("../images/header/sn1.png"),
-    url("../images/header/sn2.png"), url("../images/header/sn3.png");
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  -webkit-animation: snow 10s linear infinite;
-  -moz-animation: snow 10s linear infinite;
-  -ms-animation: snow 10s linear infinite;
-  animation: snow 10s linear infinite;
-}
-@keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px;
-  }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px;
-  }
-}
-@-moz-keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px;
-  }
-  100% {
-    background-position: 400px 1000px, 200px 400px, 100px 300px;
-  }
-}
-@-webkit-keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px;
-  }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px;
-  }
-}
-@-ms-keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px;
-  }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px;
-  }
-}
 .wd_logo {
   float: left;
   width: 100%;
@@ -399,6 +339,12 @@ li {
   -moz-box-shadow: 0px 0px 25px -10px;
   -webkit-box-shadow: 0px 0px 25px -10px;
   box-shadow: 0px 0px 25px -10px;
+}
+.logo_group_mobile{
+  display: none;
+}
+.logo_group_pc{
+  display: block;
 }
 /*-- Button Css Start --*/
 .wd_btn {
@@ -1946,7 +1892,7 @@ li {
     padding-left: 0px;
   }
   .wd_logo {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
   .wd_story_line {
     display: none;
@@ -2009,16 +1955,28 @@ li {
   .wd_main_menu ul li.active a {
     background: #ffffff;
   }
+  .logo_group_mobile {
+    text-align: right;
+    display: block;
 }
-
-@media (min-width: 480px) and (max-width: 767px) {
+  .logo_group_pc{
+    display: none;
+  }
+  .logo_text2,
+  .logo_text1{
+    font-size: 17px;
+    white-space: nowrap;
+  }
+  .logo_text1{
+    position: relative;
+    bottom: -58px;
+  }
+  .wd_header_wrapper {
+    display: initial;
 }
-
-@media (max-width: 480px) {
 }
 
 @media (max-width: 479px) {
-
   .wd_about_infobox_date {
     padding: 15px 0px;
   }
@@ -2313,13 +2271,6 @@ li {
 }
 .invitation-name{
   width: 90%;
-}
-.invitation-section .invitation-box .inner {
-  position: relative;
-}
-.invitation-section .invitation-box.left .inner{
-  top: 75px;
-  
 }
 .invitation-section .invitation-box .left-vec {
   background: url("../images/invitation-left-img.png") center center/cover no-repeat local;

@@ -241,43 +241,54 @@
     });
 
     // CountDown Js
-    var deadline = "October 28 2018 GMT+7";
     function time_elapsed(starttime) {
-      var t = Date.parse(new Date()) - Date.parse(starttime);
-      var seconds = Math.floor((t / 1000) % 60);
-      var minutes = Math.floor((t / 1000 / 60) % 60);
-      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      var now = new Date();
+      var start = new Date(starttime);
+    
+      var total = Date.parse(now) - Date.parse(start);
+      var years = now.getFullYear() - start.getFullYear();
+      var months = now.getMonth() - start.getMonth();
+      var days = now.getDate() - start.getDate();
+      if (days < 0) {
+        months--;
+        days += new Date(now.getFullYear(), now.getMonth(), 0).getDate(); // Số ngày trong tháng trước
+      }
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+    
       return {
-        total: t,
-        days: days,
-        hours: hours,
-        minutes: minutes,
-        seconds: seconds,
+        total: total,
+        years: years,
+        months: months,
+        days: days
       };
     }
+    
     function run_clock(id, starttime) {
       var clock = document.getElementById(id);
-
-      // get spans where our clock numbers are held
+    
+      var years_span = clock.querySelector(".years");
+      var months_span = clock.querySelector(".months");
       var days_span = clock.querySelector(".days");
-      var hours_span = clock.querySelector(".hours");
-      var minutes_span = clock.querySelector(".minutes");
-      var seconds_span = clock.querySelector(".seconds");
-
+    
       function update_clock() {
         var t = time_elapsed(starttime);
-
-        // update the numbers in each part of the clock
+    
+        years_span.innerHTML = t.years;
+        months_span.innerHTML = t.months;
         days_span.innerHTML = t.days;
-        hours_span.innerHTML = ("0" + t.hours).slice(-2);
-        minutes_span.innerHTML = ("0" + t.minutes).slice(-2);
-        seconds_span.innerHTML = ("0" + t.seconds).slice(-2);
       }
+    
       update_clock();
       var timeinterval = setInterval(update_clock, 1000);
     }
-    run_clock("clockdiv", deadline);
+    
+    // Định dạng starttime là năm-tháng-ngày (YYYY-MM-DD)
+    var starttime = "2018-10-28T00:00:00+07:00"; // Ví dụ: ngày bắt đầu từ năm 2018
+    
+    run_clock("clockdiv", starttime);    
 
     // Contact Form Submition
     function checkRequire(formId, targetResp) {

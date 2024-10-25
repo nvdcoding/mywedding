@@ -196,7 +196,7 @@
 }
 
 #snow {
-  display: none;
+  display: block;
   background: none;
   background-image: url("../images/header/sn1.png"),
     url("../images/header/sn2.png"), url("../images/header/sn3.png");
@@ -253,5 +253,132 @@
   }
   100% {
     background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+
+.animate-text span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px); /* Hiệu ứng trượt từ dưới lên */
+  }
+  to {
+      opacity: 1;
+    
+      transform: translateY(0);
+  }
+}
+
+/* rung */
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.5s ease forwards;
+          animation: vibrate-1 0.5s ease forwards; /* Thời gian cho một lần lặp là 0.5 giây */
+}
+
+ @-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+.slide-bottom {
+	-webkit-animation: slide-bottom 1s linear infinite ;
+	        animation: slide-bottom 1s linear infinite ;
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+.slide-top {
+	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
 }

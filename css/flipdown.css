@@ -282,4 +282,23 @@
   .flipdown .rotor:after {
     height: 25px;
   }
+  .flipdown .rotor-group {
+    transform: scale(1);
+    
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .flipdown .rotor-group {
+    transform: scale(0.9);
+    padding-right: 13px;
+  }
+}
+@media (max-width: 368px) {
+  .flipdown .rotor-group {
+    transform: scale(0.82);
+    padding-right: 5px;
+  }
 }

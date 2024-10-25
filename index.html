@@ -14,33 +14,35 @@
             <link rel="stylesheet" type="text/css" href="css/animate.css" />
             <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
             <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-            <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-            <link rel="stylesheet" type="text/css"
-               href="css/owl.theme.default.css" />
             <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
             <link rel="stylesheet" type="text/css" href="css/fonts.css" />
             <link rel="stylesheet" type="text/css" href="css/style.css" />
             <link rel="shortcut icon" type="image/ico"
                href="images/header/favicon.ico" />
                <link rel="stylesheet" href="css/flipdown.css" />
+               <link href="css/aos.css" rel="stylesheet">
          </head>
          <body>
+         <div id="preloader">
+            <div id="status"><img src="images/header/preloader.gif" id="preloader_image" alt="loader">
+            </div>
+         </div>
             <div section-scroll='0' class="wd_scroll_wrap">
                <div class="wd_slider_wrapper ">
                   <div id="snow"></div>
-                  <div class="wd_header_wrapper wd_single_index_menu">
-                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                  <div class="wd_header_wrapper wd_single_index_menu" data-aos="fade-down">
+                     <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
                         <div class="wd_logo">
                            <div class="logo_group_mobile">
                               <span class="logo_text1">Chúng mình</span>
                               <img src="images/header/time.png" alt="Logo"
                                  title="Logo" class="img-responsive">
-                              <span class="logo_text2">Sắp kết hôn.</span>
+                              <span class="logo_text2">Sắp kết hôn ♥</span>
                            </div>
                            <p class="m-0 px-3 logo_group_pc"> Chúng mình sắp kết hôn ♥ </p>
                         </div>
                      </div>
-                     <div class="col-lg-9 col-md-9 col-sm-0 col-xs-0">
+                     <div class="col-lg-9 col-md-9 col-sm-7 col-xs-0">
                         <div class="wd_mainmenu_wrapper">
                            <div class="wd_main_menu_wrapper">
                               <div class="wd_main_menu wd_single_index_menu">
@@ -59,8 +61,8 @@
                   <div class="wd_single_index_menu_down">
                      <ul>
                         <li><a href="1" id="headbottom"><i
-                           class="fa fa-long-arrow-down"
-                           aria-hidden="true"></i></a></li>
+                           class="fa fa-long-arrow-down slide-bottom"
+                           aria-hidden="true" ></i></a></li>
                      </ul>
                   </div>
                </div>
@@ -68,20 +70,22 @@
             <section section-scroll='2' class=" wd_scroll_wrap invitation-section section-padding section-bg-img">
                <div class="container">
                   <div class="row">
-                     <div class="col-md-6">
-                        <div class="invitation-box left" style="height: 577px;">
+                     <div class="col-md-6" data-aos="fade-right">
+                        <div class="invitation-box left">
                            <div class="inner">
                               <img src="images/content/name.gif" alt="Slider Image"
                               class="img-responsive invitation-name ">
-                              <br>Hôm nay sum họp trúc mai<br />
-                              Tình chung một khắc, nghĩa dài trăm năm.</p>
-                              <a href="#love_story" class="theme-btn">Ngày gặp gỡ</a>
-                              <a id="btn_happy_wedding" class="theme-btn">Mừng cưới</a>
-                              <a href="#wishes" class="theme-btn">Xem bản đồ</a>
+                              <p class="animate-text ">Hôm nay sum họp trúc mai</p>
+                              <p class="animate-text invitation_Des1" >Tình chung một khắc, nghĩa dài trăm năm.</p>
+                              <div class="theme-btn-group">
+                                 <a href="#love_story" class="theme-btn">Ngày gặp gỡ</a>
+                                 <a href="#happy_wedding" class="theme-btn">Mừng cưới</a>
+                                 <a href="#wishes" class="theme-btn">Xem bản đồ</a>
+                              </div>                            
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-6">
+                     <div class="col-md-6" data-aos="fade-left">
                         <div class="invitation-box calendar-box" style="height: 577px;">
                            <div class="inner">
                               <div class="mini_calendar">
@@ -154,7 +158,7 @@
                   </div>
                </div>
             </section>
-            <div section-scroll='8' class="wd_scroll_wrap margin-top">
+            <div section-scroll='8' class="wd_scroll_wrap margin-top" data-aos="zoom-in-up">
                <div class="container">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      <div class="wd_timer_wrapper opening_statement">
@@ -168,27 +172,27 @@
                               Một lần nữa thay mặt hai bên gia đình chúng mình xin chân thành cảm ơn!
                            </p>
                            <div class="opening_statement_thumb">
-                              <img src="images/content/bride.jpg"
-                              alt="anh cuoi"></div>
+                              <img src="images/content/image_4.JPG"
+                              alt="anh cuoi">
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div section-scroll='3' class="wd_scroll_wrap">
-               <div class="wd_event_wrapper wd_toppadder90 wd_bottompadder50">
+            <div section-scroll='1'  class="wd_scroll_wrap">
+               <div class="wd_event_wrapper wd_toppadder50 wd_bottompadder50">
                   <div class="container">
                      <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                           <div class="wd_heading wow fadeInDown"
-                              data-wow-delay="0.3s">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                           <div class="wd_heading fadeInDown">
                               <h4>Lễ cưới</h4>
                               <h1>Được tổ chức</h1>
                               <img src="images/content/heading.png"
                                  alt="Heading" class="img-responsive">
                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
                            <div class="wd_event_infobox">
                               <h2>Nhà Trai</h2>
                               <h1>15:00 pm</h1>
@@ -203,7 +207,7 @@
                            </div>
                         </div>
                         <div
-                           class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-0">
+                           class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-0"  data-aos="fade-left">
                            <div class="wd_event_infobox">
                               <h2>Nhà Gái</h2>
                               <h1>13:00 pm</h1>
@@ -218,12 +222,12 @@
                            </div>
                         </div>
                         <div
-                           class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-pull-4 col-md-pull-4 col-sm-pull-0">
+                           class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-pull-4 col-md-pull-4 col-sm-pull-0" data-aos="zoom-in">
                            <div class="wd_event_infobox">
                               <img src="images/content/tochuc.png"
                                  alt="Event Image">
                               <div
-                                 class="wd_btn wd_single_index_menu_wedding wobble-hor-top">
+                                 class="wd_btn wd_single_index_menu_wedding wobble-hor-top vibrate-1">
                                  <a>wedding</a>
                               </div>
                            </div>
@@ -232,34 +236,12 @@
                   </div>
                </div>
             </div>
-            
-            <div
-               class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <div class="wd_timer_wrapper">
-                  <div class="wd_center_words">
-                     <h4>Chúng mình đã bên nhau</h4>
-                  </div>
-                  <div id="clockdiv">
-                     <div>
-                        <span class="years"></span>
-                        <div class="smalltext">Năm</div>
-                     </div>
-                     <div>
-                        <span class="months"></span>
-                        <div class="smalltext">Tháng</div>
-                     </div>
-                     <div>
-                        <span class="days"></span>
-                        <div class="smalltext">Ngày</div>
-                     </div>
-                     
-                  </div>
-                  <div class="wd_center_words">
-                     <h4>Và tình yêu của chúng mình vẫn đang
-                        tiếp tục lớn mạnh!
-                     </h4>
-                  </div>
-               </div>
+            <div class="row" section-scroll='3'>
+            <div 
+               class="col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="fade-up"
+               data-aos-duration="3000">
+               <div class="memory_gif"></div>
+            </div>
             </div>
             <section id="love_story">
                <div class="container">
@@ -276,26 +258,26 @@
                      <ul>
                         <li class="clearfix">
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details wow slideInRight">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details  slideInRight">
                               <div
                                  class="details_content">
                                  <h2>Chương 1: Gặp gỡ
                                  </h2>
-                                 <p>Gặp nhau ở mái trường Học viện Kĩ Thuật Mật Mã, </p>
+                                 <p>Gặp nhau ở mái trường Học viện Kĩ Thuật Mật Mã, văn văn... </p>
                               </div>
                            </div>
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInLeft">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date  slideInLeft">
                               28/10/2018
                            </div>
                         </li>
                         <li class="clearfix">
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInRight">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date  slideInRight">
                               27 jan, 2015
                            </div>
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details wow slideInLeft">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details  slideInLeft">
                               <div
                                  class="details_content">
                                  <h2>Chương II: Tỏ tình
@@ -310,7 +292,7 @@
                         </li>
                         <li class="clearfix">
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details  wow slideInRight">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details   slideInRight">
                               <div
                                  class="details_content">
                                  <h2>Chương III: Phát triển
@@ -320,87 +302,62 @@
                               </div>
                            </div>
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInLeft">
-                              hiện tại
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date  slideInLeft">
+                              nay
                            </div>
                         </li>
                         <li class="clearfix">
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInRight">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date  slideInRight">
                   Hôm nay
                            </div>
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details wow slideInLeft">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details  slideInLeft">
                               <div
                                  class="details_content">
-                                 <h2>Chương IV: Ngày đặc biệt
+                                 <h2>Chương IV: Một nhà
                                  </h2>
                                  <p>
+                                    Chúng mình có thêm một gia đình để yêu thương. 
                                  </p>
                               </div>
                            </div>
                         </li>
                         <li class="clearfix">
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details  wow slideInRight">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details   slideInRight">
                               <div
                                  class="details_content">
-                                 <h2>Chương V: Một nhà
+                                 <h2>Chương V: Tương lai
                                  </h2>
-                                 <p>Chúng mình có thêm một gia đình để yêu thương. 
+                                 <p>Mãi mãi như ngày đầu nhóoo 
                                  </p>
                               </div>
                            </div>
                            <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInLeft">
+                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date  slideInLeft">
                               hiện tại
-                           </div>
-                        </li>
-                        <li class="clearfix">
-                           <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 date wow slideInRight">
-                  Hôm nay
-                           </div>
-                           <div
-                              class="col-lg-6 col-md-6 col-sm-6 col-xs-12 details wow slideInLeft">
-                              <div
-                                 class="details_content">
-                                 <h2>Chương cuối: Tương lai
-                                 </h2>
-                                 <p>
-                                    Mãi mãi như ngày đầu nhóoo
-                                 </p>
-                              </div>
                            </div>
                         </li>
                      </ul>
                      <p
-                        class="load_more wow slideInLeft"><img
+                        class="load_more  slideInLeft"><img
                         src="images/content/nhan.png"
                         alt="Line"
                         class="img-responsive"></p>
                   </div>
                </div>
             </section>
-            <!-- /#love_story -->
-            <div section-scroll='4' class="wd_scroll_wrap" id="wd_contect_wrapper">
+            <div section-scroll='4' class="wd_scroll_wrap" id="wd_contect_wrapper" data-aos="fade-left">
                <div class="wd_guest_wrapper wd_toppadder90">
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="wd_guest_infobox">
-                           
-                        </div>
-                     </div>
-                  </div>
                </div>
-               <!-- Testimonial Wrapper End -->
                <div
                   class="wd_testimonial_wrapper wd_toppadder10 wd_bottompadder10">
                   <div class="container">
                      <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                            <div class="wd_testimonial_slider">
-                              <div class="owl-carousel owl-theme">
+                              <div class="">
                                  <div class="item">
                                     <div class="wd_testimo_box">
                                        <img src="images/content/heart.png"
@@ -422,8 +379,7 @@
                   <div class="container">
                      <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                           <div class="wd_heading wow fadeInDown"
-                              data-wow-delay="0.3s">
+                           <div class="wd_heading  fadeInDown">
                               <h4>Hình cưới của chúng mình nè!!</h4>
                               <img src="images/content/heading.png"
                                  alt="Heading" class="img-responsive">
@@ -609,7 +565,7 @@
                   </div>
                </div>
             </div>
-            <div section-scroll='8' class="wd_scroll_wrap margin-top">
+            <div section-scroll='8' class="wd_scroll_wrap margin-top" data-aos="fade-down-left">
                <div class="container">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      <div class="wd_timer_wrapper ">
@@ -648,7 +604,7 @@
                <div class="wd_footer_wrapper wd_toppadder90 wd_bottompadder100">
                   <div class="container">
                      <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-right">
                            <div class="wd_footer_infobox">
                               <div class="wd_footicon">
                                  <img src="images/content/viet.jpg"
@@ -659,17 +615,16 @@
                               <p>---------</p>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"  data-aos="flip-left">
                            <div class="wd_footer_infobox">
-                              <div class="wd_footicon">
-                                 <i class="fa fa-phone"
+                              <a class="wd_footicon" href="tel: 0978107764">
+                                 <i class="fa fa-phone vibrate-1"
                                     aria-hidden="true"></i>
-                              </div>
-                              <p> Mai Lam: 0978107764</p>
-                              <p> Văn Duy: 0388476663</p>
+                              </a>
+                              <p><a href="tel: 0978107764">Mai Lam: 0978107764</a> </p>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"  data-aos="fade-left">
                            <div class="wd_footer_infobox">
                               <div class="wd_footicon">
                                  <img src="images/content/kim.png"
@@ -684,82 +639,72 @@
                   </div>
                </div>
                <div
-                  class="wd_footer_bottom_wrapper wd_toppadder20 wd_bottompadder20">
+                  class="wd_footer_bottom_wrapper wd_toppadder20 wd_bottompadder20" data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom">
                   <a href="javascript:void(0);" id="scroll" title="Scroll to Top"
                      style="display: none;"><i
-                     class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                     class="fa fa-long-arrow-up slide-top" aria-hidden="true"></i></a>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                      <div class="wd_footer_section">
                         <p class="wd_footer_section_thanks">Thank you!</p>
                         <p class="wd_footer_section_name">-- Lam & Duy --</p>
                      </div>
                   </div>
-                  <div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
+                  <div class="col-lg-9 col-md-9 col-sm-6 col-xs-12">
                      <div class="wd_footer_section">
-                        <p class="wd_footer_section_copyright">@ Được phát triển bởi cô dâu Mai Lam</p>
+                        <p class="wd_footer_section_copyright">@Được phát triển bởi cô dâu Mai Lam</p>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="modal fade" id="imageModal" tabindex="-1" role="dialog"
-               aria-labelledby="imageModalLabel"
-               aria-hidden="true">
-               <div class="modal-dialog modal-lg modal-dialog-centered"
-                  role="document">
-                  <div class="modal-content">
-                     <div class="modal-body">
-                        <img src class="img-fluid" id="modalImage" alt="Image">
-                     </div>
-                  </div>
-               </div>
-            </div>
-           
-            <!-- Footer Wrapper End -->
-            <audio id="audio" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+            <button id="audioButton" onclick="toggleAudio()">Tắt âm thanh</button>
+
+            <audio id="myAudio" autoplay src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+            
             <!--main js file start-->
             <script type="text/javascript" src="js/jquery.js"></script>
             <script type="text/javascript" src="js/bootstrap.js"></script>
-            <script type="text/javascript" src="js/owl.carousel.js"></script>
             <script type="text/javascript" src="js/modernizr.js"></script>
             <script type="text/javascript" src="js/smoothscroll.js"></script>
 <script src="js/flipdown.js"></script>
 
             <script type="text/javascript"
                src="js/jquery.magnific-popup.js"></script>
-            <script type="text/javascript" src="js/wow.js"></script>
             <script type="text/javascript" src="js/custom.js"></script>
+            <script src="js/aos.js" type="text/javascript"></script>
             <script>
                $(document).ready(function () {
+                  window.scrollTo(0, 0);
                    $('.image-link').magnificPopup({
                        type: 'image',
                        gallery: {
                            enabled: true
                        }
                    });
+                 AOS.init();
                });
                
                // Function to set the modal image source and open the modal
-               function openModal(imageSrc) {
-                   var modalImage = document.getElementById("modalImage");
-                   modalImage.src = imageSrc;
-                   $('#imageModal').modal('show'); // Open the modal
-               }
-               
-               $(window).on("load", function () {
-                   var wow = new WOW({
-                       boxClass: 'wow',
-                       animateClass: 'animated',
-                       offset: 0,
-                       mobile: true,
-                       live: true
-                   });
-                   wow.init();
-               });
                
                var flipdown = new FlipDown(Math.floor(new Date('2024-11-11T00:00:00').getTime() / 1000)               );
                flipdown.start();
-              
+               var audio = document.getElementById("myAudio");
+        var button = document.getElementById("audioButton");
+
+        // Đặt âm lượng nhỏ (ví dụ 0.2 = 20% âm lượng)
+        audio.volume = 0.2;
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                button.textContent = "Tắt âm thanh";
+            } else {
+                audio.pause();
+                button.textContent = "Bật âm thanh";
+            }
+        }
             </script>
+            
             <!--main js file end-->
          </body>
       </html>

@@ -136,6 +136,13 @@ li {
   float: left;
   width: 100%;
 }
+
+::-webkit-scrollbar {
+  background-color: inherit;
+  height: 0px;
+  position: absolute;
+  width: 0px;
+}
 /*-- Preloader css start --*/
 #preloader {
   background-color: #fff;
@@ -168,8 +175,7 @@ li {
   float: left;
   width: 100%;
   height: 800px;
-  background: url(../images/header/slider.jpg);
-  position: relative;
+  background-image: url(../images/content/image_7.JPG);
   background-attachment: fixed;
   position: relative;
   background-size: cover;
@@ -177,17 +183,11 @@ li {
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 500px) {
   .wd_slider_wrapper {
-    float: left;
     width: 100%;
-    background: url(../images/content/image_13.jpg);
-    position: relative;
-    background-attachment: fixed;
-    position: relative;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    height: 450px;
+    background-image: url(../images/content/image_13.jpg);
   }
 
   .wd_slider_textinfo img {
@@ -272,6 +272,7 @@ li {
 }
 .wd_logo img {
   display: inline-block;
+  height: 60px;
 }
 .wd_header_wrapper {
   float: left;
@@ -446,12 +447,12 @@ li {
 /* opening_statement */
 .opening_statement .opening_statement_thumb{
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
 }
 .opening_statement .opening_statement_thumb img{
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -482,23 +483,14 @@ li {
   padding: 0px 15px;
   background-color: #ffffff;
 }
-#clockdiv {
-  float: left;
+.memory_gif{
   width: 100%;
-  color: #f07677;
-  display: inline-block;
-  text-align: center;
-  font-size: 70px;
-  padding: 30px 0px 10px 0px;
-}
-#clockdiv > div {
-  display: inline-block;
-  margin: 30px 50px;
-  font-family: "Mali", cursive;
-}
-#clockdiv div > span {
-  float: left;
-  width: 100%;
+  background-image: url(../images/content/memory.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin: auto;
 }
 .smalltext {
   float: left;
@@ -742,7 +734,7 @@ li {
   float: left;
   width: 100%;
   height: 500px;
-  background-image: url(../images/content/guest_bg.jpg);
+  background-image: url(../images/content/image_24.JPG);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1674,13 +1666,256 @@ li {
   border-radius: 100%;
   background-color: #f07677;
 }
-/*-- Responsive css Start --*/
+
+#love_story {
+  background: #fff;
+  padding-bottom: 165px;
+}
+#love_story ul li {
+  padding-bottom: 50px;
+  background-image: url(../images/content/our-love-story-divider.png),
+    url(../images/content/love-story-divider.png);
+  background-position: center top, center top;
+  background-repeat: no-repeat, repeat-y;
+}
+#love_story ul li > div:first-child {
+  text-align: right;
+  padding-right: 45px;
+}
+#love_story ul li > div:last-child {
+  text-align: left;
+  padding-left: 45px;
+}
+#love_story h2 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #262626;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+#love_story p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #939393;
+  margin-bottom: 10px;
+}
+#love_story a {
+  font-size: 13px;
+  line-height: 32px;
+  color: #ff6d6d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#love_story .details a.read_more {
+  border: 1px solid rgb(255, 109, 109);
+  border-radius: 5px;
+  color: #ff6d6d;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+#love_story .details a.read_more:hover {
+  color: #fff;
+}
+#love_story .details a.read_more:before {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  background: rgb(255, 109, 109);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease 0.1s;
+}
+#love_story .details a.read_more:hover:before {
+  width: 100%;
+}
+
+#love_story .date {
+  font-size: 18px;
+  line-height: 42px;
+  color: #262626;
+  font-style: italic;
+}
+#love_story .details .details_content {
+  background-color: #fff;
+  padding: 20px 30px;
+  width: 365px;
+  margin-top: -15px;
+}
+#love_story ul li > div:first-child .details_content {
+  float: right;
+}
+#love_story ul li > div:first-child .details_content {
+  background: url(../images/content/love-story-story-bg-left.png) no-repeat 0 0;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+#love_story ul li > div:last-child .details_content {
+  float: left;
+}
+#love_story ul li > div:last-child .details_content {
+  background: url(../images/content/love-story-story-bg-right.png) no-repeat 0 0;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+#love_story .load_more {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+#love_story .load_more img{
+  margin: 0 48.4%;
+}
+.section_title_wrap{
+  text-align: center;
+}
+.theme-btn-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.theme-btn{
+  border: 1px solid #636363;
+  background: #636363;
+  width: 125px;
+  height: 42px;
+  border-radius: 6px;
+  color: var(--color-white-solid, #FFFFFF);
+  padding: 5px;
+  margin: 5px 4px;
+  font-size: 16px;
+  line-height: 29px;
+}
+.theme-btn:hover{
+  background: #505050;
+  color: var(--color-white-solid, #FFFFFF);
+}
+/*--------------------------------------------------------------
+#0.6	invitation-section 
+--------------------------------------------------------------*/
+.invitation-section .invitation-box {
+  background: #fff;
+  max-width: 580px;
+  padding: 120px 70px;
+  -webkit-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  height: 577px;
+}
+
+.invitation-section .calendar-box {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.invitation-section .calendar-box .mini_calendar{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E3E3E6;
+}
+
+.invitation-section .calendar-box table{
+    width: 100%;
+}
+
+.invitation-section .calendar-box table th{
+    text-align: center;
+    padding: 8px 0;
+    color: #484747;
+    border-top: 1px solid #CFCFD0;
+    border-bottom: 1px solid #CFCFD0;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+.invitation-section .calendar-box .mini_calendar table tr:nth-child(2) td {
+    padding-top: 20px;
+    height: 60px;
+}
+.invitation-section .calendar-box .mini_calendar td {
+    font-size: 0.9em;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    color: #484747;
+}
+.invitation-section .calendar-box .mini_calendar .calendar-month {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    color: #203447;
+    text-transform: uppercase;
+}
+.invitation-section .calendar-box .mini_calendar td #today{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    padding: 5px;
+    background-color: rgb(200, 157, 156);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.invitation-section .invitation-box:before {
+  content: "";
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  border: 5px solid rgb(129 103 103 / 40%);
+}
+.invitation-name{
+  width: 90%;
+}
+.invitation-section .invitation-box .left-vec {
+  background: url("../images/invitation-left-img.png") center center/cover no-repeat local;
+  width: 220px;
+  height: 414px;
+  position: absolute;
+  left: -150px;
+  top: -100px;
+  z-index: -1;
+}
+
+.invitation-section .invitation-box .right-vec {
+  background: url("../images/invitation-right-image.png") center center/cover no-repeat local;
+  width: 400px;
+  height: 508px;
+  position: absolute;
+  right: -120px;
+  bottom: -100px;
+  z-index: -1;
+}
+
+.invitation-section .calendar-box .left-vec {display:none;}
+.invitation-section .invitation-box.left .right-vec {display:none;}
+
+
+.invitation-section .invitation-box h2 {
+  font-family: "Mali", cursive;
+  font-size: 50px;
+  font-size: 3.33333rem;
+  margin: 0 0 0.6em;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   
-  .wd_main_menu ul li a {
-    padding: 50px 8px;
-  }
+
   .menu_fixed .wd_main_menu ul li a {
     padding: 30px 8px;
   }
@@ -1701,7 +1936,7 @@ li {
   }
   .wd_family_tabbox .tab-content:after {
     width: 90%;
-  }0
+  }
   .wd_about_infobox_date {
     padding: 65px 20px;
   }
@@ -1744,9 +1979,6 @@ li {
   }
   .menu_fixed .wd_main_menu ul li a {
     padding: 10px 10px;
-  }
-  #clockdiv > div {
-    margin: 30px 10px;
   }
   .wd_story_line {
     display: none;
@@ -1926,9 +2158,6 @@ li {
   .wd_footer_infobox p {
     padding: 0px 0px;
   }
-  .wd_footer_section {
-    text-align: center;
-  }
   .wd_footer_section img {
     float: none;
     display: inline-block;
@@ -1936,8 +2165,16 @@ li {
   }
   .wd_footer_section p {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 10px;
   }
+  .wd_footer_section .wd_footer_section_name,
+  .wd_footer_section .wd_footer_section_copyright ,
+  .wd_footer_section .wd_footer_section_thanks {
+    text-align: center;
+}
+.wd_footer_section .wd_footer_section_copyright {
+  line-height: 20px;
+}
   .wd_gallery_slide {
     margin-bottom: 16px;
   }
@@ -1964,15 +2201,56 @@ li {
   }
   .logo_text2,
   .logo_text1{
-    font-size: 17px;
+    font-size: 15px;
     white-space: nowrap;
   }
   .logo_text1{
     position: relative;
-    bottom: -58px;
+    bottom: -18px;
   }
+  .logo_text2 {
+    position: relative;
+    top: -10px;
+}
   .wd_header_wrapper {
     display: initial;
+}
+.image-gallery .column{
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-item {
+  width: calc(50% - 10px);
+  cursor: pointer;
+}
+#scroll {
+  width: 70px;
+  height: 70px;
+  top: -43px;
+}
+#scroll i {
+  bottom: 15px;
+  position: relative;
+}
+#headbottom {
+  width: 70px;
+  height: 70px;
+}
+#headbottom i {
+  top: -15px;
+}
+.invitation-section .invitation-box:before {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  left: 15px;
+}
+.invitation-section{
+  margin-top: 20px;
+}
+.section_title{
+  font-size: 26px;
 }
 }
 
@@ -2060,248 +2338,6 @@ li {
 .margin-top {
   margin-top: 40px;
 }
-/*-- Responsive css End --*/
-
-/*==========================
- # 10.  Love Story Styles
- =========================*/
-
-#love_story {
-  background: #fff;
-  padding-bottom: 165px;
-}
-#love_story ul li {
-  padding-bottom: 50px;
-  background-image: url(../images/content/our-love-story-divider.png),
-    url(../images/content/love-story-divider.png);
-  background-position: center top, center top;
-  background-repeat: no-repeat, repeat-y;
-}
-#love_story ul li > div:first-child {
-  text-align: right;
-  padding-right: 45px;
-}
-#love_story ul li > div:last-child {
-  text-align: left;
-  padding-left: 45px;
-}
-#love_story h2 {
-  font-size: 18px;
-  line-height: 24px;
-  color: #262626;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-#love_story p {
-  font-size: 14px;
-  line-height: 26px;
-  color: #939393;
-  margin-bottom: 10px;
-}
-#love_story a {
-  font-size: 13px;
-  line-height: 32px;
-  color: #ff6d6d;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#love_story .details a.read_more {
-  border: 1px solid rgb(255, 109, 109);
-  border-radius: 5px;
-  color: #ff6d6d;
-  display: inline-block;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 22px;
-  margin-bottom: 10px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-}
-#love_story .details a.read_more:hover {
-  color: #fff;
-}
-#love_story .details a.read_more:before {
-  content: "";
-  width: 0;
-  height: 100%;
-  display: inline-block;
-  background: rgb(255, 109, 109);
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: width 0.3s ease 0.1s;
-}
-#love_story .details a.read_more:hover:before {
-  width: 100%;
-}
-
-#love_story .date {
-  font-size: 18px;
-  line-height: 42px;
-  color: #262626;
-  font-style: italic;
-}
-#love_story .details .details_content {
-  background-color: #fff;
-  padding: 20px 30px;
-  width: 365px;
-  margin-top: -15px;
-}
-#love_story ul li > div:first-child .details_content {
-  float: right;
-}
-#love_story ul li > div:first-child .details_content {
-  background: url(../images/content/love-story-story-bg-left.png) no-repeat 0 0;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-#love_story ul li > div:last-child .details_content {
-  float: left;
-}
-#love_story ul li > div:last-child .details_content {
-  background: url(../images/content/love-story-story-bg-right.png) no-repeat 0 0;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-#love_story .load_more {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-}
-#love_story .load_more img{
-  margin: 0 48.4%;
-}
-.section_title_wrap{
-  text-align: center;
-}
-.theme-btn{
-  border: 1px solid #636363;
-  background: #636363;
-  width: 189px;
-  height: 42px;
-  border-radius: 6px;
-  color: var(--color-white-solid, #FFFFFF);
-  padding: 5px;
-}
-.theme-btn:hover{
-  background: #505050;
-  color: var(--color-white-solid, #FFFFFF);
-}
-/*--------------------------------------------------------------
-#0.6	invitation-section 
---------------------------------------------------------------*/
-.invitation-section .invitation-box {
-  background: #fff;
-  max-width: 580px;
-  padding: 120px 70px;
-  -webkit-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
-.invitation-section .calendar-box {
-    padding-top: 70px;
-    padding-bottom: 90px;
-}
-
-.invitation-section .calendar-box .mini_calendar{
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E3E3E6;
-}
-
-.invitation-section .calendar-box table{
-    width: 100%;
-}
-
-.invitation-section .calendar-box table th{
-    text-align: center;
-    padding: 8px 0;
-    color: #484747;
-    border-top: 1px solid #CFCFD0;
-    border-bottom: 1px solid #CFCFD0;
-    font-size: 0.9em;
-    font-weight: normal;
-}
-.invitation-section .calendar-box .mini_calendar table tr:nth-child(2) td {
-    padding-top: 20px;
-    height: 60px;
-}
-.invitation-section .calendar-box .mini_calendar td {
-    font-size: 0.9em;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    color: #484747;
-}
-.invitation-section .calendar-box .mini_calendar .calendar-month {
-    text-align: center;
-    margin-bottom: 5px;
-    font-family: "Mali", cursive;
-    font-weight: 600;
-    color: #203447;
-    text-transform: uppercase;
-}
-.invitation-section .calendar-box .mini_calendar td #today{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 20px;
-    padding: 5px;
-    background-color: rgb(200, 157, 156);
-    color: #fff;
-    border-radius: 50%;
-}
-
-.invitation-section .invitation-box:before {
-  content: "";
-  width: calc(100% - 100px);
-  height: calc(100% - 100px);
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  border: 5px solid rgb(129 103 103 / 40%);
-}
-.invitation-name{
-  width: 90%;
-}
-.invitation-section .invitation-box .left-vec {
-  background: url("../images/invitation-left-img.png") center center/cover no-repeat local;
-  width: 220px;
-  height: 414px;
-  position: absolute;
-  left: -150px;
-  top: -100px;
-  z-index: -1;
-}
-
-.invitation-section .invitation-box .right-vec {
-  background: url("../images/invitation-right-image.png") center center/cover no-repeat local;
-  width: 400px;
-  height: 508px;
-  position: absolute;
-  right: -120px;
-  bottom: -100px;
-  z-index: -1;
-}
-
-.invitation-section .calendar-box .left-vec {display:none;}
-.invitation-section .invitation-box.left .right-vec {display:none;}
-
-
-.invitation-section .invitation-box h2 {
-  font-family: "Mali", cursive;
-  font-size: 50px;
-  font-size: 3.33333rem;
-  margin: 0 0 0.6em;
-}
 
 @media (max-width: 991px) {
   .invitation-section .invitation-box h2 {
@@ -2315,6 +2351,14 @@ li {
     font-size: 28px;
     font-size: 1.86667rem;
   }
+  .invitation-section .invitation-box {
+    height: 420px;
+    padding: 84px 25px;
+  }
+  .invitation-section .calendar-box{
+    margin-top: 30px;
+  }
+  
 }
 
 .invitation-section .invitation-box h2 + span {
@@ -2351,10 +2395,13 @@ li {
   }
 }
 
-.invitation-section .invitation-box p {
+.invitation-section .invitation-box p{
   font-size: 17px;
   font-size: 1.13333rem;
+}
+.invitation-section .invitation-box p.invitation_Des1{
   margin-bottom: 2em;
+
 }
 
 @media (max-width: 991px) {

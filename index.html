@@ -172,7 +172,7 @@
                               Một lần nữa thay mặt hai bên gia đình chúng mình xin chân thành cảm ơn!
                            </p>
                            <div class="opening_statement_thumb">
-                              <img src="images/content/image_4.JPG"
+                              <img src="images/content/image_34.JPG"
                               alt="anh cuoi">
                            </div>
                         </div>
@@ -375,7 +375,7 @@
             </div>
             <!-- Gallery Wrapper Start -->
             <div section-scroll='6' class="wd_scroll_wrap">
-               <div class="wd_gallery_wrapper wd_toppadder90 wd_bottompadder90">
+               <div class="wd_gallery_wrapper wd_toppadder30 wd_bottompadder30">
                   <div class="container">
                      <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -402,7 +402,8 @@
                                  loading="lazy" alt>
                               </a>
                            </div>
-                           <div class="image-item">
+                           <div class="hidden moreImages">
+                             <div class="image-item">
                               <a href="images/content/image_3.jpg"
                                  class="image-link">
                               <img src="images/content/image_3.jpg"
@@ -443,6 +444,7 @@
                               <img src="images/content/image_13.jpg"
                                  loading="lazy" alt>
                               </a>
+                           </div> 
                            </div>
                         </div>
                         <div class="column">
@@ -460,6 +462,8 @@
                                  loading="lazy" alt>
                               </a>
                            </div>
+                           <div class="hidden moreImages">
+                              
                            <div class="image-item">
                               <a href="images/content/image_6.jpg"
                                  class="image-link">
@@ -503,6 +507,7 @@
                               </a>
                            </div>
                         </div>
+                        </div>
                         <div class="column">
                            <div class="image-item">
                               <a href="images/content/image_8.jpg"
@@ -518,6 +523,8 @@
                                  loading="lazy" alt>
                               </a>
                            </div>
+                           <div class="hidden moreImages">
+                              
                            <div class="image-item">
                               <a href="images/content/image_14.jpg"
                                  class="image-link">
@@ -560,11 +567,17 @@
                                  loading="lazy" alt>
                               </a>
                            </div>
+                           
+                        </div>
                         </div>
                      </div>
+            <p class="btn_show_more" id="toggleButtonShowMore">Xem thêm</p>
+
                   </div>
+
                </div>
             </div>
+
             <div section-scroll='8' class="wd_scroll_wrap margin-top" data-aos="fade-down-left">
                <div class="container">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -710,6 +723,22 @@
                });
                var flipdown = new FlipDown(Math.floor(new Date('2024-11-11T00:00:00').getTime() / 1000)               );
                flipdown.start();
+
+               const toggleButton = document.getElementById('toggleButtonShowMore');
+const moreImages = document.querySelectorAll('.moreImages');
+const toggleImages = () => {
+  console.log("moreImages",moreImages);
+  
+  moreImages.forEach(column => {
+      column.classList.toggle('hidden'); // Thay đổi lớp 'hidden' cho mỗi cột hình ảnh
+  });
+
+  // Thay đổi nội dung nút
+  toggleButton.textContent = moreImages[0].classList.contains('hidden') ? 'Xem thêm' : 'Ẩn bớt';
+};
+
+// Thêm sự kiện click cho nút
+toggleButton.addEventListener('click', toggleImages);
 
             </script>
             

@@ -149,3 +149,26 @@ function startAnimation(e) {
 element.forEach(e => {
 startAnimation(e);
 });
+function toggleAudio() {
+  $(document).ready(function () {
+    
+var audio = document.getElementById("myAudio");
+var musicoff = document.getElementById("music_off");
+var musicon = document.getElementById("music_on");
+audio.volume = 0.3;
+if(audio){
+  if (audio.paused) {
+    audio.play();
+    musicon.style.display = "none";
+    musicoff.style.display = "block";
+   } else {
+    audio.pause();
+    musicon.style.display = "block";
+    musicoff.style.display = "none";
+   }  
+}
+
+
+
+});
+}

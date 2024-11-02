@@ -1,11 +1,13 @@
 
-body,
 html {
+  
+  overflow-x: hidden;
+}
+body{
   font-family: "Mali", serif;
   font-size: 16px;
   line-height: 23px;
   color: #797979;
-  overflow-x: hidden;
 }
 a {
   color: #797979;
@@ -139,9 +141,13 @@ li {
 
 ::-webkit-scrollbar {
   background-color: inherit;
-  height: 0px;
+  height: 2px;
   position: absolute;
-  width: 0px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b5b4b4;
+  border-radius: 10px;
 }
 /*-- Preloader css start --*/
 #preloader {
@@ -447,8 +453,9 @@ li {
 /* opening_statement */
 .opening_statement .opening_statement_thumb{
   width: 100%;
-  height: 350px;
+  height: 310px;
   overflow: hidden;
+  margin-top: 20px;
 }
 .opening_statement .opening_statement_thumb img{
   width: 100%;
@@ -2338,7 +2345,115 @@ li {
 .margin-top {
   margin-top: 40px;
 }
-
+.invitation-section.thanks_wish .invitation-box {
+  background: initial;
+  padding: 20px;
+  height: 555px !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.invitation-section.thanks_wish .invitation-box:before {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  left: 5px;
+  top: 5px;
+  border: 5px solid rgb(247 148 148 / 40%);
+}
+.thanks_wish_img{
+  width: 100%;
+  height: 100%;
+}
+.wish_form{
+  position: relative;
+  z-index: 10;
+}
+.wish_form_title{
+  font-size: 19px !important;
+  font-weight: 500;
+  color: #7d0303;
+  margin-bottom: 20px;
+}
+.wish_form input{
+  border: 1px solid #ccc;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  width: 99%;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+.wish_form input:focus{
+  border: 1px solid #4bda41;
+  height: 40px;
+}
+.wish_form button{
+  outline: none;
+  border: 1px solid #e03;
+  border-radius: 50px;
+  height: 45px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 130px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #e03;
+  margin-bottom: 20px;
+}
+.wish_form button:hover{
+  background-color: rgb(187, 2, 42);
+}
+.form_wish{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wish_content{
+  border-bottom: 1px dotted #ccc;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  padding-bottom: 7px;
+  margin-top: 11px;
+}
+.wish_name{
+  color: #780808;
+  font-size: 18px !important;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.wish_body{
+  font-size: 16px !important;
+  color: #290202;
+  line-height: 15px;
+}
+.wd_timer_wrapper  .content{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.wish_form_main {
+  height: 235px;
+  overflow: auto;
+}
+.music_update{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: pink;
+  border-radius: 50%;
+  bottom: 160px;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#myAudio,
+.music_update #music_off{
+  display: none;
+}
 @media (max-width: 991px) {
   .invitation-section .invitation-box h2 {
     font-size: 40px;

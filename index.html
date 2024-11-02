@@ -23,10 +23,10 @@
                <link href="css/aos.css" rel="stylesheet">
          </head>
          <body>
-         <div id="preloader">
+         <!-- <div id="preloader">
             <div id="status"><img src="images/header/preloader.gif" id="preloader_image" alt="loader">
             </div>
-         </div>
+         </div> -->
             <div section-scroll='0' class="wd_scroll_wrap">
                <div class="wd_slider_wrapper ">
                   <div id="snow"></div>
@@ -181,7 +181,7 @@
                </div>
             </div>
             <div section-scroll='1'  class="wd_scroll_wrap">
-               <div class="wd_event_wrapper wd_toppadder50 wd_bottompadder50">
+               <div class="wd_event_wrapper wd_toppadder20 wd_bottompadder30">
                   <div class="container">
                      <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
@@ -591,17 +591,37 @@
                               trong tâm trí các bạn.
                               Xin chân thành cảm ơn và trân trọng !
                            </p>
-                           <p><img src="images/content/heading.png"
-                              alt="Heading"></p>
-                        </div>
-                        <div class="wd_center_words">
                         </div>
                      </div>
                   </div>
                </div>
                <!-- Contact Wrapper End -->
                <!-- Footer Wrapper Start -->
-               <div class="wd_footer_wrapper wd_toppadder90 wd_bottompadder100">
+               <section section-scroll='2' class=" wd_scroll_wrap invitation-section thanks_wish section-padding section-bg-img">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6" data-aos="fade-right">
+                           <img alt="thanks" class="thanks_wish_img" src="./images/content/thanks.jpg" />
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left">
+                           <div class="invitation-box">
+                              <div class="wish_form">
+                                 <p class="wish_form_title">Gửi lời chúc đến chúng mình nhaa </p>
+                                 <form id="dataForm" class="form_wish">
+                                    <input type="text" name="name" placeholder="Cho mình biết tên của bạn nha" required>
+                                    <input type="text" name="wish" placeholder="Gửi lời chúc cho chúng mình nhaa" required>
+                                    <button type="submit">Gửi luôn</button>
+                                 </form>
+                                 <p class="wish_form_title">Lời chúc mình đã nhận được, cảm ơn cả nhà rất nhiều</p>
+                                 <div id="output" class="wish_form_main"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               
+               <div class="wd_footer_wrapper wd_toppadder30 wd_bottompadder30">
                   <div class="container">
                      <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-right">
@@ -657,9 +677,11 @@
                   </div>
                </div>
             </div>
-            <button id="audioButton" onclick="toggleAudio()">Tắt âm thanh</button>
-
-            <audio id="myAudio" autoplay src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+            <div class="music_update" onclick="toggleAudio()">
+               <img alt="icon" id="music_off" class="heartbeat" src="./images/content/musicoff.svg" /> 
+               <img alt="icon" id="music_on" class="heartbeat" src="./images/content/musicin.svg" />
+            </div>
+               <audio id="myAudio" controls loop src="./images/header/music.mp3"></audio>
             
             <!--main js file start-->
             <script type="text/javascript" src="js/jquery.js"></script>
@@ -667,7 +689,9 @@
             <script type="text/javascript" src="js/modernizr.js"></script>
             <script type="text/javascript" src="js/smoothscroll.js"></script>
 <script src="js/flipdown.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="js/firebase.js" defer></script>
             <script type="text/javascript"
                src="js/jquery.magnific-popup.js"></script>
             <script type="text/javascript" src="js/custom.js"></script>
@@ -675,6 +699,7 @@
             <script>
                $(document).ready(function () {
                   window.scrollTo(0, 0);
+                  
                    $('.image-link').magnificPopup({
                        type: 'image',
                        gallery: {
@@ -683,26 +708,9 @@
                    });
                  AOS.init();
                });
-               
-               // Function to set the modal image source and open the modal
-               
                var flipdown = new FlipDown(Math.floor(new Date('2024-11-11T00:00:00').getTime() / 1000)               );
                flipdown.start();
-               var audio = document.getElementById("myAudio");
-        var button = document.getElementById("audioButton");
 
-        // Đặt âm lượng nhỏ (ví dụ 0.2 = 20% âm lượng)
-        audio.volume = 0.2;
-
-        function toggleAudio() {
-            if (audio.paused) {
-                audio.play();
-                button.textContent = "Tắt âm thanh";
-            } else {
-                audio.pause();
-                button.textContent = "Bật âm thanh";
-            }
-        }
             </script>
             
             <!--main js file end-->

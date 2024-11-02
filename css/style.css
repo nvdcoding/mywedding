@@ -2068,14 +2068,25 @@ li {
 @media (max-width: 767px) {
   .invitation-section .invitation-box {
     padding: 84px 25px;
-    width: 420px;
+    height: 420px;
   }
   .invitation-section .calendar-box{
     margin-top: 30px;
     height: 515px !important;
     padding: 35px 35px;
   }
-  
+  .invitation-section .invitation-box:before {
+    content: "";
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    border: 5px solid rgb(129 103 103 / 40%);
+}
+  .invitation-section{
+    margin-top: 45px;
+  }
 }
 
 .invitation-section .invitation-box h2 + span {
@@ -2122,5 +2133,45 @@ li {
 .wd_event_infobox span {
   margin-bottom: 5px;
   padding: 0;
+}
+
+.logo_group_mobile{
+  display: block;
+}
+.wd_mainmenu_wrapper,
+.logo_group_pc{
+  display: none;
+}
+.wd_heading h1 {
+  font-size: 20px;
+}
+.wd_heading img {
+  width: 67px;
+  margin-top: -30px;
+}
+.wd_event_infobox p {
+  margin-bottom: 8px;
+}
+.wd_event_infobox {
+  margin-bottom: 13px;
+}
+.wd_event_infobox_3{
+  display: none;
+}
+.memory_gif {
+  height: 200px;
+}
+h1, .h1 {
+  font-size: 25px;
+}
+.thanks_wish_img {
+  margin-bottom: 20px;
+}
+.wd_footicon i {
+  width: 60px;
+  height: 60px;
+  line-height: 64px;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 }

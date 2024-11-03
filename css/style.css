@@ -1777,7 +1777,15 @@ li {
   margin: 0 auto;
 }
 #love_story .load_more img{
-  margin: 0 48.4%;
+  width: 50px;
+  margin: 0 49.4%;
+  height: auto;
+}
+#love_story  img{
+  width: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+  height: 200px;
 }
 .section_title_wrap{
   text-align: center;

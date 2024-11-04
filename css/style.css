@@ -738,10 +738,10 @@ li {
 .wd_guest_wrapper {
   float: left;
   width: 100%;
-  height: 570px;
-  background-image: url(../images/content/image_24.jpg);
+  height: 670px;
+  background-image: url(../images/content/image_35.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 100% 20%;
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
@@ -2033,7 +2033,7 @@ li {
 .wish_body{
   font-size: 16px !important;
   color: #290202;
-  line-height: 15px;
+  line-height: 18px;
 }
 .wd_timer_wrapper  .content{
   width: 80%;

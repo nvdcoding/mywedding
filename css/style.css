@@ -1,11 +1,11 @@
-
 html {
-  
   overflow-x: hidden;
 }
-body{
+body {
   font-family: "Mali", serif;
   font-size: 16px;
+  overflow: hidden;
+
   line-height: 23px;
   color: #797979;
 }
@@ -37,7 +37,7 @@ h6,
   font-weight: 400;
   color: #222222;
 }
-p{
+p {
   padding: 0;
   margin: 0;
 }
@@ -64,14 +64,14 @@ ol,
 li {
   list-style: none;
 }
-.container{
+.container {
   max-width: 1170px;
   padding: 0 15px;
   width: 100%;
   margin: auto;
 }
 .container::before,
-.container::after{
+.container::after {
   content: none;
 }
 .wd_toppadder10 {
@@ -193,7 +193,8 @@ li {
   .wd_slider_wrapper {
     width: 100%;
     height: 450px;
-    background-image: url(../images/content/image_8.jpg);
+    background-image: url(../images/content/image_7.jpg);
+    background-position: 42% -243px;
   }
 }
 
@@ -229,7 +230,7 @@ li {
   padding: 0 0px 200px 100px;
   text-align: center;
 }
-.invitation-box-info{
+.invitation-box-info {
   position: absolute;
   top: 55px;
   right: 60px;
@@ -343,10 +344,10 @@ li {
   -webkit-box-shadow: 0px 0px 25px -10px;
   box-shadow: 0px 0px 25px -10px;
 }
-.logo_group_mobile{
+.logo_group_mobile {
   display: none;
 }
-.logo_group_pc{
+.logo_group_pc {
   display: block;
 }
 /*-- Button Css Start --*/
@@ -447,13 +448,13 @@ li {
 }
 
 /* opening_statement */
-.opening_statement .opening_statement_thumb{
+.opening_statement .opening_statement_thumb {
   width: 100%;
   height: 410px;
   overflow: hidden;
   margin-top: 20px;
 }
-.opening_statement .opening_statement_thumb img{
+.opening_statement .opening_statement_thumb img {
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -487,7 +488,7 @@ li {
   padding: 0px 15px;
   background-color: #ffffff;
 }
-.memory_gif{
+.memory_gif {
   width: 100%;
   background-image: url(../images/content/memory.gif);
   background-size: contain;
@@ -685,10 +686,10 @@ li {
   text-align: center;
   margin-bottom: 30px;
 }
-.wd_event_infobox img{
-  width:230px;
+.wd_event_infobox img {
+  width: 230px;
 }
-.wd_event_infobox .map{
+.wd_event_infobox .map {
   width: 25px;
   margin-bottom: 3px;
 }
@@ -1623,28 +1624,25 @@ li {
   width: auto;
   height: 93px;
 }
-.wd_footer_section .wd_footer_section_thanks{
+.wd_footer_section .wd_footer_section_thanks {
   font-size: 41.6px;
   font-weight: 300;
   line-height: 100%;
   letter-spacing: 0.04px;
   text-align: left;
   color: #474747;
-
 }
-.wd_footer_section .wd_footer_section_name{
+.wd_footer_section .wd_footer_section_name {
   font-size: 20.6px;
   font-weight: 300;
   line-height: 100%;
   letter-spacing: 0.04px;
   text-align: left;
   color: #474747;
-
 }
-.wd_footer_section .wd_footer_section_copyright{
+.wd_footer_section .wd_footer_section_copyright {
   text-align: right;
   line-height: 65px;
-
 }
 .wd_footer_section p {
   padding-top: 8px;
@@ -1772,48 +1770,50 @@ li {
   background: url(../images/content/love-story-story-bg-right.png) no-repeat 0 0;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
+  width: 98%;
+  padding: 14px;
 }
 #love_story .load_more {
   text-align: center;
   display: block;
   margin: 0 auto;
 }
-#love_story .load_more img{
+#love_story .load_more img {
   width: 50px;
   margin: 0 49.4%;
   height: auto;
 }
-#love_story  img{
+#love_story img {
   width: 200px;
   object-fit: cover;
   border-radius: 100%;
   height: 200px;
 }
-.section_title_wrap{
+.section_title_wrap {
   text-align: center;
 }
-.theme-btn-group{
+.theme-btn-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
   z-index: 10;
 }
-.theme-btn{
+.theme-btn {
   border: 1px solid #636363;
   background: #636363;
   width: 125px;
   height: 42px;
   border-radius: 6px;
-  color: var(--color-white-solid, #FFFFFF);
+  color: var(--color-white-solid, #ffffff);
   padding: 5px;
   margin: 5px 4px;
   font-size: 16px;
   line-height: 29px;
 }
-.theme-btn:hover{
+.theme-btn:hover {
   background: #505050;
-  color: var(--color-white-solid, #FFFFFF);
+  color: var(--color-white-solid, #ffffff);
 }
 /*--------------------------------------------------------------
 #0.6	invitation-section 
@@ -1832,57 +1832,57 @@ li {
 }
 
 .invitation-section .calendar-box {
-    padding-top: 70px;
-    padding-bottom: 90px;
+  padding-top: 70px;
+  padding-bottom: 90px;
 }
 
-.invitation-section .calendar-box .mini_calendar{
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E3E3E6;
+.invitation-section .calendar-box .mini_calendar {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e3e3e6;
 }
 
-.invitation-section .calendar-box table{
-    width: 100%;
+.invitation-section .calendar-box table {
+  width: 100%;
 }
 
-.invitation-section .calendar-box table th{
-    text-align: center;
-    padding: 8px 0;
-    color: #484747;
-    border-top: 1px solid #CFCFD0;
-    border-bottom: 1px solid #CFCFD0;
-    font-size: 0.9em;
-    font-weight: normal;
+.invitation-section .calendar-box table th {
+  text-align: center;
+  padding: 8px 0;
+  color: #484747;
+  border-top: 1px solid #cfcfd0;
+  border-bottom: 1px solid #cfcfd0;
+  font-size: 0.9em;
+  font-weight: normal;
 }
 .invitation-section .calendar-box .mini_calendar table tr:nth-child(2) td {
-    padding-top: 20px;
-    height: 60px;
+  padding-top: 20px;
+  height: 60px;
 }
 .invitation-section .calendar-box .mini_calendar td {
-    font-size: 0.9em;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    color: #484747;
+  font-size: 0.9em;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  color: #484747;
 }
 .invitation-section .calendar-box .mini_calendar .calendar-month {
-    text-align: center;
-    margin-bottom: 5px;
-    font-family: "Mali", cursive;
-    font-weight: 600;
-    color: #203447;
-    text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: "Mali", cursive;
+  font-weight: 600;
+  color: #203447;
+  text-transform: uppercase;
 }
-.invitation-section .calendar-box .mini_calendar td #today{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 20px;
-    padding: 5px;
-    background-color: rgb(200, 157, 156);
-    color: #fff;
-    border-radius: 50%;
+.invitation-section .calendar-box .mini_calendar td #today {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  padding: 5px;
+  background-color: rgb(200, 157, 156);
+  color: #fff;
+  border-radius: 50%;
 }
 
 .invitation-section .invitation-box:before {
@@ -1894,11 +1894,12 @@ li {
   top: 50px;
   border: 5px solid rgb(129 103 103 / 40%);
 }
-.invitation-name{
+.invitation-name {
   width: 90%;
 }
 .invitation-section .invitation-box .left-vec {
-  background: url("../images/invitation-left-img.png") center center/cover no-repeat local;
+  background: url("../images/invitation-left-img.png") center center/cover
+    no-repeat local;
   width: 220px;
   height: 414px;
   position: absolute;
@@ -1908,7 +1909,8 @@ li {
 }
 
 .invitation-section .invitation-box .right-vec {
-  background: url("../images/invitation-right-image.png") center center/cover no-repeat local;
+  background: url("../images/invitation-right-image.png") center center/cover
+    no-repeat local;
   width: 400px;
   height: 508px;
   position: absolute;
@@ -1917,9 +1919,12 @@ li {
   z-index: -1;
 }
 
-.invitation-section .calendar-box .left-vec {display:none;}
-.invitation-section .invitation-box.left .right-vec {display:none;}
-
+.invitation-section .calendar-box .left-vec {
+  display: none;
+}
+.invitation-section .invitation-box.left .right-vec {
+  display: none;
+}
 
 .invitation-section .invitation-box h2 {
   font-family: "Mali", cursive;
@@ -1966,21 +1971,21 @@ li {
   top: 5px;
   border: 5px solid rgb(247 148 148 / 40%);
 }
-.thanks_wish_img{
+.thanks_wish_img {
   width: 100%;
   height: 100%;
 }
-.wish_form{
+.wish_form {
   position: relative;
   z-index: 10;
 }
-.wish_form_title{
-  font-size: 19px !important;
-  font-weight: 500;
-  color: #7d0303;
+.wish_form_title {
+  font-size: 22px !important;
+  font-weight: 600;
+  color: #545454;
   margin-bottom: 20px;
 }
-.wish_form input{
+.wish_form input {
   border: 1px solid #ccc;
   height: 40px;
   border-radius: 10px;
@@ -1989,11 +1994,18 @@ li {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-.wish_form input:focus{
+.wish_form input:focus {
   border: 1px solid #4bda41;
   height: 40px;
 }
-.wish_form button{
+.form_wish textarea {
+  border: 1px solid #ccc;
+  width: 99%;
+  outline: none;
+  border-radius: 10px;
+  padding: 4px 15px;
+}
+.wish_form button {
   outline: none;
   border: 1px solid #e03;
   border-radius: 50px;
@@ -2005,17 +2017,18 @@ li {
   font-weight: 600;
   color: #ffffff;
   background: #e03;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
-.wish_form button:hover{
+.wish_form button:hover {
   background-color: rgb(187, 2, 42);
 }
-.form_wish{
+.form_wish {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.wish_content{
+.wish_content {
   border-bottom: 1px dotted #ccc;
   display: flex;
   flex-direction: column;
@@ -2024,18 +2037,18 @@ li {
   padding-bottom: 7px;
   margin-top: 11px;
 }
-.wish_name{
+.wish_name {
   color: #780808;
   font-size: 18px !important;
   font-weight: 500;
   margin-bottom: 3px;
 }
-.wish_body{
+.wish_body {
   font-size: 16px !important;
   color: #290202;
   line-height: 18px;
 }
-.wd_timer_wrapper  .content{
+.wd_timer_wrapper .content {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
@@ -2044,7 +2057,7 @@ li {
   height: 235px;
   overflow: auto;
 }
-.music_update{
+.music_update {
   position: fixed;
   width: 50px;
   height: 50px;
@@ -2059,10 +2072,10 @@ li {
   cursor: pointer;
 }
 #myAudio,
-.music_update #music_off{
+.music_update #music_off {
   display: none;
 }
-.btn_show_more{
+.btn_show_more {
   border: none;
   background: initial;
   text-decoration: underline;
@@ -2076,13 +2089,12 @@ li {
   cursor: pointer;
 }
 
-
 @media (max-width: 767px) {
   .invitation-section .invitation-box {
     padding: 84px 25px;
     height: 420px;
   }
-  .invitation-section .calendar-box{
+  .invitation-section .calendar-box {
     margin-top: 30px;
     height: 515px !important;
     padding: 35px 35px;
@@ -2095,8 +2107,8 @@ li {
     left: 15px;
     top: 15px;
     border: 5px solid rgb(129 103 103 / 40%);
-}
-  .invitation-section{
+  }
+  .invitation-section {
     margin-top: 45px;
   }
 }
@@ -2113,13 +2125,12 @@ li {
   margin: 0.83em 0 1em;
 }
 
-.invitation-section .invitation-box p{
+.invitation-section .invitation-box p {
   font-size: 17px;
   font-size: 1.13333rem;
 }
-.invitation-section .invitation-box p.invitation_Des1{
+.invitation-section .invitation-box p.invitation_Des1 {
   margin-bottom: 2em;
-
 }
 
 @media (max-width: 767px) {
@@ -2129,142 +2140,163 @@ li {
   }
   body {
     overflow: hidden;
-}
-.wd_timer_wrapper .content {
-  width: 100%;
-}
-.wd_heading{
-  margin-bottom: 10px;
-  
-}
-.wd_event_infobox h1 {
-  margin: 10px 0px;
-  padding: 10px 24px;
-  font-size: 25px;
-}
-.wd_event_infobox span {
-  margin-bottom: 5px;
-  padding: 0;
-}
+  }
+  .wd_timer_wrapper .content {
+    width: 100%;
+  }
+  .wd_heading {
+    margin-bottom: 10px;
+  }
+  .wd_event_infobox h1 {
+    margin: 10px 0px;
+    padding: 10px 24px;
+    font-size: 25px;
+  }
+  .wd_event_infobox span {
+    margin-bottom: 5px;
+    padding: 0;
+  }
 
-.logo_group_mobile{
-  display: block;
-  text-align: right;
-}
-.wd_mainmenu_wrapper,
-.logo_group_pc{
-  display: none;
-}
-.wd_heading h1 {
-  font-size: 20px;
-}
-.wd_heading img {
-  width: 67px;
-  margin-top: -30px;
-}
-.wd_event_infobox p {
-  margin-bottom: 8px;
-}
-.wd_event_infobox {
-  margin-bottom: 13px;
-}
-.wd_event_infobox_3{
-  display: none;
-}
-.memory_gif {
-  height: 200px;
-}
-h1, .h1 {
-  font-size: 25px;
-}
-.thanks_wish_img {
-  margin-bottom: 20px;
-}
-.wd_footicon i {
-  width: 60px;
-  height: 60px;
-  line-height: 64px;
-  margin-bottom: 10px;
-  font-size: 30px;
-}
-#love_story ul li > div:first-child {
-  text-align: left;
-  padding-right: 0;
-  padding-left: 0;
-}
-#love_story ul{
-  padding-left: 15px;
-}
-#love_story ul li > div:first-child .details_content {
-  width: 100%;
-  padding: 10px;
-}
-#love_story ul li {
-  padding-bottom: 20px;
-}
-#love_story ul li > div:last-child {
-  text-align: left;
-  padding-left: 12px;
-}
-#love_story .details .details_content {
-  padding: 10px;
-}
-#love_story img {
-  width: 160px;
-  height: 160px;
-}
-#love_story h2 {
-  font-size: 14px;
-  line-height: 15px;
-  margin-bottom: 4px;
-  margin-top: 7px;
-}
-#love_story p {
-  font-size: 12px;
-  line-height: 19px;
-  color: #939393;
-  margin-bottom: 4px;
-}
-.wd_footer_section .wd_footer_section_thanks {
-  font-size: 34.6px;
-  text-align: center;
-  margin-top: 25px;
-}
-.wd_footer_section .wd_footer_section_name {
-  font-size: 18.6px;
-  text-align: center;
-}
+  .logo_group_mobile {
+    display: block;
+    text-align: right;
+  }
+  .wd_mainmenu_wrapper,
+  .logo_group_pc {
+    display: none;
+  }
+  .wd_heading h1 {
+    font-size: 20px;
+  }
+  .wd_heading img {
+    width: 67px;
+    margin-top: -30px;
+  }
+  .wd_event_infobox p {
+    margin-bottom: 8px;
+  }
+  .wd_event_infobox {
+    margin-bottom: 13px;
+  }
+  .wd_event_infobox_3 {
+    display: none;
+  }
+  .memory_gif {
+    height: 200px;
+    border-radius: 10px;
+    width: 95%;
+    background-size: 100% 100%;
+  }
+  h1,
+  .h1 {
+    font-size: 25px;
+  }
+  .thanks_wish_img {
+    margin-bottom: 20px;
+  }
+  .wd_footicon i {
+    width: 60px;
+    height: 60px;
+    line-height: 64px;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  #love_story ul li > div:first-child {
+    padding-right: 24px;
+    padding-left: 0;
+    text-align: right;
+  }
+  #love_story ul {
+    padding-left: 8px;
+  }
+  #love_story ul li > div:first-child .details_content {
+    width: 99%;
+    padding: 14px;
+  }
+  #love_story ul li {
+    padding-bottom: 20px;
+  }
+  #love_story ul li > div:last-child {
+    text-align: left;
+    padding-left: 26px;
+  }
+  #love_story .details .details_content {
+    padding: 10px;
+  }
+  #love_story img {
+    width: 160px;
+    height: 160px;
+  }
+  #love_story h2 {
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 4px;
+    margin-top: 7px;
+  }
+  #love_story p {
+    font-size: 12px;
+    line-height: 19px;
+    color: #939393;
+    margin-bottom: 4px;
+  }
+  .wd_footer_section .wd_footer_section_thanks {
+    font-size: 34.6px;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .wd_footer_section .wd_footer_section_name {
+    font-size: 18.6px;
+    text-align: center;
+  }
 
-.wd_footer_section .wd_footer_section_copyright {
-  text-align: center;
-  line-height: 13px;
+  .wd_footer_section .wd_footer_section_copyright {
+    text-align: center;
+    line-height: 13px;
+  }
+  #love_story .date {
+    font-size: 15px;
 }
-#scroll {
-  top: -39px;
-  width: 70px;
-  height: 70px;
+  #scroll {
+    top: -39px;
+    width: 70px;
+    height: 70px;
+  }
+  #scroll i {
+    position: relative;
+    top: -12px;
+  }
+  .wd_header_wrapper {
+    display: initial;
+  }
+  .logo_text1 {
+    position: relative;
+    bottom: -14px;
+  }
+  .logo_group_mobile {
+    font-size: 15px;
+  }
+  #headbottom {
+    bottom: -46px;
+    width: 70px;
+    height: 70px;
+  }
+  #headbottom i {
+    font-size: 22px;
+    top: -14px;
+  }
+  #love_story .load_more img {
+    margin: 0 45.8%;
 }
-#scroll i{
-  position: relative;
-  top: -12px;
+.wd_guest_wrapper {
+  background-image: url(../images/content/image_29.JPG);
+  height: 500px;
 }
-.wd_header_wrapper {
-  display: initial;
+.wd_testimo_box p {
+  font-size: 18px;
+  line-height: 24px;
 }
-.logo_text1{
-  position: relative;
-  bottom: -14px;
-}
-.logo_group_mobile{
-  font-size: 15px;
-}
-#headbottom {
-  bottom: -46px;
-  width: 70px;
-  height: 70px;
-}
-#headbottom i {
-  font-size: 22px;
-  top: -14px;
+.wd_testimo_box img {
+  width: 32px !important;
+  height: 27px;
 }
 }

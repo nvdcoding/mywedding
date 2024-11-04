@@ -269,7 +269,7 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 date " data-aos="fade-left">
-                <img alt="icon" src="./images/content/image_23.jpg" />
+                <img alt="icon" src="./images/content/image_36.jpg" />
               </div>
             </li>
             <li class="clearfix" data-aos="zoom-out-up">
@@ -591,20 +591,22 @@
           }
         });
         const audio = document.getElementById("myAudio");
-        audio.volumn = 0.2;
+        
+var musicoff = document.getElementById("music_off");
+var musicon = document.getElementById("music_on");
         function enableAudioPlayback() {
-          audio.play().then(() => {
-            musicOn.style.display = "block";
-            musicOff.style.display = "none";
-          }).catch(error => {
-            console.log("Autoplay failed:", error);
-          });
-          // Remove event listeners after the first interaction
+         $(document).ready(function () {
+          if(audio){
+         audio.volumn = 0.2;
+         audio.play()
+          }
+         });
           document.removeEventListener("click", enableAudioPlayback);
           document.removeEventListener("keypress", enableAudioPlayback);
         }
         document.addEventListener("click", enableAudioPlayback);
         document.addEventListener("keypress", enableAudioPlayback);
+        
         AOS.init();
       });
       var flipdown = new FlipDown(Math.floor(new Date('2024-11-11T00:00:00').getTime() / 1000));

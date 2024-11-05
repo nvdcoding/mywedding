@@ -184,6 +184,7 @@ li {
   background-image: url(../images/content/image_31.JPG);
   background-attachment: fixed;
   position: relative;
+  top: -7px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2137,7 +2138,8 @@ li {
 .invitation-section .invitation-box p.invitation_Des1 {
   margin-bottom: 2em;
 }
-.moreImages{
+.moreImages,
+.moreImages1{
   display: grid;
   grid-gap: 10px;
 }
@@ -2309,7 +2311,8 @@ li {
 .wish_form_main {
   height: 203px;
 }
-.moreImages{
+.moreImages,
+.moreImages1{
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);

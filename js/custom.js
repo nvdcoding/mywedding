@@ -155,8 +155,9 @@ function toggleAudio() {
 var audio = document.getElementById("myAudio");
 var musicoff = document.getElementById("music_off");
 var musicon = document.getElementById("music_on");
-audio.volume = 0.2;
 if(audio){
+audio.volume = 0.2;
+
   if (audio.paused) {
     audio.play();
     musicon.style.display = "none";

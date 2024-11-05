@@ -2057,6 +2057,7 @@ li {
   align-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 9999;
 }
 #myAudio,
 .music_update #music_off{

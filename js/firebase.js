@@ -53,10 +53,10 @@ const displayData = (data) => {
 
     if (data) {
         // Chuyển dữ liệu thành mảng để dễ dàng sắp xếp
-        const itemsArray = Object.entries(data).map(([key, value]) => ({ id: key, ...value }));
+        const itemsArray = Object.entries(data).map(([key, value]) => ({ id: key, ...value })).reverse();
 
         // Sắp xếp mảng theo thứ tự mới nhất (ID thường là timestamp nếu bạn sử dụng push())
-        itemsArray.sort((a, b) => b.id.localeCompare(a.id));
+        // itemsArray.sort((a, b) => b.id.localeCompare(a.id));
 
         // Hiển thị dữ liệu
         itemsArray.forEach(item => {

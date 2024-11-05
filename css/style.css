@@ -194,11 +194,11 @@ li {
   .wd_slider_wrapper {
     width: 100%;
     height: 450px;
+    background-size: contain;
     background-image: url(../images/content/image_7.jpg);
-    background-position: 42% -243px;
-    background-position-y: -243px;
-    background-position-x: 48%;
-  }
+    background-position-y: -54px;
+    background-position-x: 100%;
+}
 }
 
 #headbottom {

@@ -1998,6 +1998,7 @@ li {
   margin-bottom: 15px;
   padding-left: 15px;
 }
+.wish_form textarea:focus
 .wish_form input:focus {
   border: 1px solid #4bda41;
   height: 40px;
@@ -2136,11 +2137,13 @@ li {
 .invitation-section .invitation-box p.invitation_Des1 {
   margin-bottom: 2em;
 }
-
+.moreImages{
+  display: grid;
+  grid-gap: 10px;
+}
 @media (max-width: 767px) {
   .invitation-section .invitation-box p {
     font-size: 12px;
-    font-size: 0.8rem;
   }
   body {
     overflow: hidden;
@@ -2305,5 +2308,18 @@ li {
 }
 .wish_form_main {
   height: 203px;
+}
+.moreImages{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.theme-btn {
+  width: 115px;
+  height: 35px;
+  padding: 2px;
+}
+.invitation-section .invitation-box p.invitation_Des1 {
+  margin-bottom: 1.4em;
 }
 }

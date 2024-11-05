@@ -1774,7 +1774,7 @@ li {
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   width: 98%;
-  padding: 14px;
+  padding:0 26px;
 }
 #love_story .load_more {
   text-align: center;
